@@ -3,6 +3,16 @@
   height: 809px;
   border: 1px solid black;
 
+  .footer__container {
+    width: 100%;
+    height: 100%;
+    max-width: 1410px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .footer__top {
     width: 100%;
     height: 559px;
@@ -11,18 +21,81 @@
   .footer__middle {
     width: 100%;
     height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #333;
+    .middle_logo__developer {
+      width: 55%;
+      height: 81px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .footer__logo_title {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        .footer__emblem {
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: auto;
+            height: auto;
+          }
+        }
+        .footer__title {
+          width: 272px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 130%;
+          color: #ffffff;
+        }
+      }
+      .resource {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+    .social__links {
+      width: 242px;
+      height: 38px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
   .footer__bottom {
     width: 100%;
     height: 80px;
     background-color: #3c3c3c;
-  }
-  .footer__container {
-    width: 100%;
-    height: 100%;
-    max-width: 1410px;
-    margin: 0 auto;
-    border: 1px dotted white;
+    p {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 130%;
+      color: #a0a0a0;
+    }
   }
 }
