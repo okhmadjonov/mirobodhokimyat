@@ -1,0 +1,39 @@
+.header {
+  position: absolute;
+  width: 100%;
+  height: 167px;
+  z-index: 111;
+  margin: 30px auto;
+
+  .header__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header__inner-top {
+      width: 100%;
+      height: 50%;
+      border: 1px solid teal;
+      .header__container {
+        width: 100%;
+        height: 100%;
+        max-width: 1410px;
+        margin: 0 auto;
+        border: 1px solid white;
+      }
+    }
+    .header__inner-bottom {
+      width: 100%;
+      height: 50%;
+      //   background: #edebf3;
+      border: 1px solid tomato;
+      .header__container {
+        width: 100%;
+        height: 100%;
+        max-width: 1410px;
+        margin: 0 auto;
+        border: 1px solid red;
+      }
+    }
+  }
+}
