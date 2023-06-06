@@ -3,6 +3,7 @@ import "./About.scss";
 import usefullLinks from "./usefullLinks";
 import banner__content_emblem from "../../assets/img/about_emb.png";
 import { BsChevronRight } from "react-icons/bs";
+import Footer from "../../components/Footer/Footer";
 const About = () => {
   return (
     <div className="about">
@@ -106,6 +107,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
