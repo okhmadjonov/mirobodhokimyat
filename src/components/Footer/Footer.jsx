@@ -12,7 +12,58 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__top">
-        <div className="footer__container"></div>
+        <div className="footer__container">
+          <div className="footer_top-inner">
+            <div className="footer__top__menu-title">
+              <Link className="menu-title">О Хокимяте</Link>
+              <Link className="menu-title">Пресс-центр</Link>
+              <Link className="menu-title">Деятельность</Link>
+              <Link className="menu-title">Район</Link>
+            </div>
+            <div className="footer__top__menu-content">
+              <div className="menu-content">
+                <Link className="menu__link">О Хокимяте</Link>
+                <Link className="menu__link">Руководство</Link>
+                <Link className="menu__link">Цели, задачи и функции</Link>
+                <Link className="menu__link">Подразделения</Link>
+                <Link className="menu__link">Вакансии</Link>
+                <Link className="menu__link">Виртуальная приемная</Link>
+              </div>
+              <div className="menu-content">
+                <Link className="menu__link"> Новости</Link>
+                <Link className="menu__link">Обьявления</Link>
+                <Link className="menu__link">Благоустройство района</Link>
+                <Link className="menu__link">Выступление Руководства</Link>
+                <Link className="menu__link">СМИ о нас</Link>
+                <Link className="menu__link">Статистика обращений</Link>
+                <Link className="menu__link">Открытые данные </Link>
+                <Link className="menu__link">Пресс-релизы</Link>
+                <Link className="menu__link">Фотогалерея</Link>
+                <Link className="menu__link">Видеогалерея</Link>
+              </div>
+
+              <div className="menu-content">
+                <Link className="menu__link"> Стратегия действий</Link>
+                <Link className="menu__link">Проекты</Link>
+                <Link className="menu__link">Тендеры</Link>
+                <Link className="menu__link">
+                  Международные проекты и программы
+                </Link>
+                <Link className="menu__link">Обшественный совет</Link>
+                <Link className="menu__link">Статические данные</Link>
+              </div>
+              <div className="menu-content">
+                <Link className="menu__link"> Общая информация</Link>
+                <Link className="menu__link">Интересные места</Link>
+                <Link className="menu__link">Карта района</Link>
+                <Link className="menu__link">Парки и зоны отдыха</Link>
+                <Link className="menu__link">Для граждан</Link>
+                <Link className="menu__link">Для бизнеса</Link>
+                <Link className="menu__link">Для туристов</Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="footer__middle">
         <div className="footer__container">
