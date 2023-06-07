@@ -1,10 +1,10 @@
 import React from "react";
-// import banner__content_emblem from "../../../../assets/img/header_emb.png";
+import "./Content.scss";
 import { BsChevronRight } from "react-icons/bs";
 
-function Header() {
+function Content() {
   return (
-    <div >
+    <div>
       <div className="header__conatiner">
         <div className="header_title">
           <p>Главный</p>
@@ -87,4 +87,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Content;
