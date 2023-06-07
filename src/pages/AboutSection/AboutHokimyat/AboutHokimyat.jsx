@@ -1,6 +1,5 @@
 import React from "react";
 import "./AboutHokimyat.scss";
-import Footer from "../../../components/Footer/Footer";
 import UsefullLinks from "../../../components/UsefullLinks/UsefullLinks";
 import Content from "./components/Content";
 const About = () => {

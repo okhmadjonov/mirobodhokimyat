@@ -1,8 +1,7 @@
 .header__conatiner {
-  width: 100%;
+  width: 65.9%;
   height: auto;
   margin: 0 auto;
-  max-width: 930px;
 
   .header_title {
     cursor: pointer;
@@ -12,6 +11,7 @@
     align-items: center;
     gap: 10px;
     color: #858585;
+    font-size: 1.125em;
   }
   .header__banner {
     position: relative;
@@ -62,7 +62,7 @@
           font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
-          font-size: 24px;
+          font-size: 1.5em;
           line-height: 29px;
           color: #000;
         }
@@ -78,7 +78,7 @@
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 1.125em;
       line-height: 150%;
       text-align: justify;
       color: #000000;

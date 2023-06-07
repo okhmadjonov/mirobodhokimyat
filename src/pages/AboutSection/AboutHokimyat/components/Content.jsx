@@ -1,7 +1,7 @@
 import React from "react";
 import "./Content.scss";
 import { BsChevronRight } from "react-icons/bs";
-
+import banner__content_emblem from "../../../../assets/img/about_emb.png";
 function Content() {
   return (
     <div>
@@ -15,7 +15,7 @@ function Content() {
           <div className="banner__img"></div>
           <div className="banner__content">
             <div className="content__img">
-              {/* <img src={banner__content_emblem} alt="Emblem" /> */}
+              <img src={banner__content_emblem} alt="Emblem" />
             </div>
             <div className="content__text">
               <h3>Хокимият Мирабадского района города Ташкента</h3>
