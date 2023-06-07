@@ -1,10 +1,10 @@
 import React from "react";
-// import banner__content_emblem from "../../../../assets/img/header_emb.png";
+import "./Content.scss";
 import { BsChevronRight } from "react-icons/bs";
-
-function Header() {
+import banner__content_emblem from "../../../../assets/img/about_emb.png";
+function Content() {
   return (
-    <div >
+    <div>
       <div className="header__conatiner">
         <div className="header_title">
           <p>Главный</p>
@@ -15,7 +15,7 @@ function Header() {
           <div className="banner__img"></div>
           <div className="banner__content">
             <div className="content__img">
-              {/* <img src={banner__content_emblem} alt="Emblem" /> */}
+              <img src={banner__content_emblem} alt="Emblem" />
             </div>
             <div className="content__text">
               <h3>Хокимият Мирабадского района города Ташкента</h3>
@@ -87,4 +87,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Content;

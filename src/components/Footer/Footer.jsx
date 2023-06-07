@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__top">
-        <div className="footer__container">
+        <div className="footer__container container">
           <div className="footer_top-inner">
             <div className="footer__top__menu-title">
               <Link className="menu-title">О Хокимяте</Link>
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__middle">
-        <div className="footer__container">
+        <div className="footer__container container">
           <div className="middle_logo__developer">
             <div className="footer__logo_title">
               <div className="footer__emblem">
@@ -97,7 +97,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__bottom">
-        <div className="footer__container">
+        <div className="footer__container container">
           <p>© Toshkent shahar Mirobod Hokimyati 2021</p>
         </div>
       </div>

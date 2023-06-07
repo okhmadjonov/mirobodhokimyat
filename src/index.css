@@ -1,4 +1,4 @@
-* {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,8 +10,7 @@
 html {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
-  /* font-size: 50%; */
+
 }
 
 body {
@@ -27,22 +26,4 @@ body {
   height: 100%;
   max-width: 1410px;
   margin: 0 auto;
-}
 
-@media screen and (max-width: 1480px) {
-  html {
-    font-size: 85%;
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  html {
-    font-size: 73%;
-  }
-}
-
-@media screen and (max-width: 1230px) {
-  html {
-    font-size: 63%;
-  }
-}
