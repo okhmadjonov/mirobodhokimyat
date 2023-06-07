@@ -1,9 +1,10 @@
 import React from "react";
-import "./About.scss";
-import usefullLinks from "./usefullLinks";
-import banner__content_emblem from "../../assets/img/about_emb.png";
+import "./AboutHokimyat.scss";
+import banner__content_emblem from "../../../assets/img/about_emb.png";
 import { BsChevronRight } from "react-icons/bs";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../../components/Footer/Footer";
+import UsefullLinks from "../../../components/UsefullLinks/UsefullLinks";
+
 const About = () => {
   return (
     <div className="about">
@@ -87,25 +88,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="usefull__links">
-          <div className="usefull__title">Полезные ссылки</div>
-          <div className="usefull__content">
-            <div className="usefull_items">
-              {usefullLinks.map((item, index) => (
-                <div className="usefull_item" key={index} id={item.id}>
-                  <div
-                    className="usefull__item-img"
-                    style={{
-                      backgroundImage: `url(${item.imgUrl})`,
-                    }}></div>
-                  <div className="usefull__item-title">
-                    <p>{item.title}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <UsefullLinks />
       </div>
       <Footer />
     </div>

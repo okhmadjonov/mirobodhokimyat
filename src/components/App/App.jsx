@@ -1,4 +1,4 @@
-import About from "../../pages/About/About";
+import About from "../../pages/AboutSection/AboutHokimyat/AboutHokimyat";
 import Home from "../../pages/Home/Home";
 import Header from "../Header/Header";
 import "./App.scss";

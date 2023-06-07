@@ -1,4 +1,4 @@
-const usefullLinks = [
+const useData = [
   {
     id: "1",
     title: "Правительственный портал Республики Узбекистана",
@@ -46,4 +46,4 @@ const usefullLinks = [
   },
 ];
 
-export default usefullLinks;
+export default useData;
