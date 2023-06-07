@@ -1,6 +1,6 @@
 import React from "react";
-import "./Header.scss";
-const Header = () => {
+import "./Navbar.scss";
+const Navbar = () => {
   return (
     <div className="header">
       <div className="header__inner">
@@ -15,4 +15,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;
