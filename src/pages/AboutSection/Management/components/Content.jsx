@@ -37,7 +37,13 @@ const Content = () => {
           ))}
         </div>
         <div className="management__content_right">
-          <div className="content__right-card"></div>
+          <div className="content__right-card">
+            <div className="right__card__inner">
+              <div className="inner__item active">Руководство</div>
+              <div className="inner__item">Аппарат</div>
+              <div className="inner__item">Департаменты и управления</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
