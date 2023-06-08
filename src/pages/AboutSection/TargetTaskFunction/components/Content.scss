@@ -1,0 +1,120 @@
+.targettaskfunction__content {
+  width: 65%;
+  margin: 0 auto;
+
+  .targettaskfunction__content__url {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #858585;
+    cursor: pointer;
+  }
+  .targettaskfunction__content__wrapper {
+    width: 100%;
+    height: auto;
+
+    .targettaskfunction__content-first {
+      width: 100%;
+      margin-top: 20px;
+
+      h3 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5em;
+        line-height: 29px;
+        color: #000;
+      }
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125em;
+        line-height: 130%;
+        color: #3c3c3c;
+        margin-top: 30px;
+      }
+    }
+    .targettaskfunction__content-second {
+      width: 100%;
+      margin-top: 50px;
+
+      .second__card {
+        width: 100%;
+        height: auto;
+        background: #fff;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        .second__card-inner {
+          width: 95%;
+          height: auto;
+          cursor: pointer;
+          .second__card__top {
+            height: 50px;
+            display: flex;
+            align-items: center;
+
+            justify-content: space-between;
+            p {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 1.25em;
+              line-height: 24px;
+              color: #000;
+            }
+            .chevron1_open {
+              width: 30px;
+              height: 30px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+
+              background-color: #0078c8;
+              .chevron1 {
+                color: #fff;
+                font-weight: 700;
+              }
+              .chevron1__rotate {
+                color: #fff;
+                font-weight: 700;
+                transform: rotate(180deg);
+                transition: all 0.5s ease-in-out;
+              }
+            }
+          }
+          .second__card__content {
+            width: 100%;
+            height: auto;
+            margin-top: 25px;
+            display: none;
+            p {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.125em;
+              color: #3c3c3c;
+              line-height: 130%;
+            }
+          }
+          .second__card__content_open {
+            display: block;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

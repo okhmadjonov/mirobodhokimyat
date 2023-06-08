@@ -1,0 +1,33 @@
+.order__container {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  .order__desc {
+    width: 100%;
+    height: auto;
+    .description {
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      
+      h3 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5em;
+        line-height: 29px;
+        color: #000000;
+        
+      }
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125em;
+        line-height: 130%;
+        color: #3c3c3c;
+        margin-top: 30px;
+      }
+    }
+  }
+}

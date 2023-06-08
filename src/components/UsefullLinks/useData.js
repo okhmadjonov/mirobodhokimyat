@@ -41,7 +41,7 @@ const useData = [
   },
   {
     id: "9",
-    title: "Единая ЭЛЕКТРОННАЯ СИСТЕМА РАЗРАБОТКИ",
+    title: "Единая электронная  система разработка",
     imgUrl: "https://i.ibb.co/XYRcRMW/usefull9.png",
   },
 ];
