@@ -19,7 +19,7 @@ body {
   /* max-width: 1920px; */
   height: 100%;
   font-family: "Montserrat", sans-serif;
-  caret-color: transparent !important;
+  background-color: #f7f7f7;
 }
 
 .container {
@@ -44,5 +44,11 @@ body {
 @media screen and (max-width: 1230px) {
   html {
     font-size: 63%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  html {
+    font-size: 55%;
   }
 }

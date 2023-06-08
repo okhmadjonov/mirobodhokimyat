@@ -17,7 +17,6 @@ import {
 import { NavLink, useLocation } from "react-router-dom";
 const Navbar = () => {
   const location = useLocation();
-
   const chevronIcon =
     location.pathname === "/" ? chevronDownImg : chevronDownDarkImg;
   return (

@@ -1,0 +1,45 @@
+.map {
+  background-color: #3c3c3c;
+  min-height: 45rem;
+  margin: 20px 0;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .left {
+      color: #fff;
+      padding: 8rem 0;
+      .title {
+        margin-bottom: 2rem;
+        h1 {
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+      }
+      .item {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-bottom: 1px solid #545454;
+        p {
+          color: #cfcfcf;
+          font-size: 1rem;
+        }
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      position: absolute;
+      right: 0;
+      img {
+        height: 45rem;
+        width: 100%;
+      }
+    }
+  }
+}

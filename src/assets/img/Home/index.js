@@ -8,6 +8,41 @@ import searchImg from "./searchLight.png";
 import chevronDownImg from "./chevron-down.png";
 import chevronDownDarkImg from "./chevron-down-dark.png";
 
+// cards images
+import mapIcon from "./mapIcon.png";
+import newsPaperIcon from "./NewspaperIcon.png";
+import SatelliteIcon from "./SatelliteIcon.png";
+
+// slider images
+import arrowRight from "./arrow-right.png";
+import slideEye from "./slider/eye.png";
+import slideCalendar from "./slider/calendar.png";
+
+import slide1 from "./slider/1.png";
+import slide2 from "./slider/2.png";
+import slide3 from "./slider/3.png";
+import slide4 from "./slider/4.png";
+import slide5 from "./slider/5.png";
+import slide6 from "./slider/6.png";
+import slide7 from "./slider/7.png";
+import slide8 from "./slider/8.png";
+import slide9 from "./slider/9.png";
+import slide10 from "./slider/10.png";
+
+// map
+import mapImg from "./mapImg.webp";
+
+// meeting slide images
+import meetingsSlider1 from "./meetingsImg.png";
+
+// photoGalert slide images
+import photoGalerySlide1 from "./photoGalery/1.png";
+import photoGalerySlide2 from "./photoGalery/2.png";
+import photoGalerySlide3 from "./photoGalery/3.png";
+import photoGalerySlide4 from "./photoGalery/4.png";
+import photoGalerySlide5 from "./photoGalery/5.png";
+import photoGalerySlide6 from "./photoGalery/6.png";
+import photoGalerySlide7 from "./photoGalery/7.png";
 export {
   ruImg,
   gerbImg,
@@ -18,4 +53,29 @@ export {
   searchImg,
   chevronDownImg,
   chevronDownDarkImg,
+  mapIcon,
+  newsPaperIcon,
+  SatelliteIcon,
+  arrowRight,
+  slide1,
+  slide2,
+  slide3,
+  slide4,
+  slide5,
+  slide6,
+  slide7,
+  slide8,
+  slide9,
+  slide10,
+  slideEye,
+  slideCalendar,
+  mapImg,
+  meetingsSlider1,
+  photoGalerySlide1,
+  photoGalerySlide2,
+  photoGalerySlide3,
+  photoGalerySlide4,
+  photoGalerySlide5,
+  photoGalerySlide6,
+  photoGalerySlide7,
 };

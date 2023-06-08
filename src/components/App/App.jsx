@@ -4,6 +4,8 @@ import Home from "../../pages/Home/Home";
 import Navbar from "../Navbar/Navbar";
 import "./App.scss";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import "swiper/css";
+import "swiper/css/navigation";
 function App() {
   return (
     <>
