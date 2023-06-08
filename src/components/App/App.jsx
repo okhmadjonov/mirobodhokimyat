@@ -21,6 +21,7 @@ import News from "../../pages/PressCenter/News/News";
 
 import "./App.scss";
 import Vacancy from "../../pages/AboutSection/Vacancy/Vacancy";
+import Contact from "../../pages/AboutSection/Contact/Contact";
 function App() {
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
           <Route path="/structure" element={<Structure />} />
           <Route path="/order" element={<Order />} />
           <Route path="/vacancy" element={<Vacancy />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" replace={true} />} />
           <Route path="/deputy" element={<LastNews />} />
         </Routes>
