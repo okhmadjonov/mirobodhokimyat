@@ -20,6 +20,7 @@ import LastNews from "../../pages/PressCenter/LastNews/LastNews";
 import News from "../../pages/PressCenter/News/News";
 
 import "./App.scss";
+import Vacancy from "../../pages/AboutSection/Vacancy/Vacancy";
 function App() {
   return (
     <>
@@ -32,7 +33,7 @@ function App() {
           <Route path="/targettaskfunction" element={<TargetTaskFunction />} />
           <Route path="/structure" element={<Structure />} />
           <Route path="/order" element={<Order />} />
-          <Route path="*" element={<Navigate to="/" replace={true} />} />
+          <Route path="/vacancy" element={<Vacancy />} />
           <Route path="*" element={<Navigate to="/" replace={true} />} />
           <Route path="/deputy" element={<LastNews />} />
         </Routes>
