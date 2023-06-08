@@ -1,0 +1,97 @@
+.news__title {
+  font-weight: 700;
+  font-size: 2.5;
+  color: #000;
+  margin-bottom: 30px;
+}
+.news {
+  display: flex;
+  gap: 30px;
+  .news__left {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    gap: 30px;
+    .news__left__card {
+      .card__img {
+        img {
+          width: 100%;
+        }
+      }
+      .card__text {
+        .card__text__about {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          margin: 15px 0;
+          .card__text__about__inside {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            p {
+              font-weight: 500;
+              color: #858585;
+            }
+          }
+        }
+        .card__text__title {
+          font-weight: 600;
+          color: #000000;
+        }
+      }
+    }
+  }
+  .news__right {
+    .news__category {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      .news__category__title {
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #000000;
+      }
+      .news__category__inside {
+        li {
+          font-weight: 500;
+          font-size: 1.125;
+          color: #000000;
+          padding: 15px;
+          margin-top: 20px;
+          transition: 0.4s;
+          border-radius: 8px;
+        }
+        .active {
+          background: #0078c8;
+          border-radius: 8px;
+          color: #fff;
+          transition: 0.4s;
+        }
+      }
+    }
+    .news__document {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 35px 55px;
+      border-radius: 12px;
+      margin: 20px 0;
+      background-color: #fff;
+      font-weight: 500;
+      font-size: 1.25;
+      color: #000000;
+    }
+
+    .news__services {
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 35px 65px;
+      font-weight: 500;
+      background-color: #fff;
+      font-size: 1.25;
+      color: #000000;
+    }
+  }
+}

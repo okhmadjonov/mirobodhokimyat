@@ -1,0 +1,36 @@
+.hakim {
+  .hakim__cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    .hakim__cards__card {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      .card__text {
+        .card__text__title {
+          font-weight: 600;
+          font-size: 1.25rem;
+          line-height: 24px;
+          color: #000000;
+        }
+        .card__text__subTitle {
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 130%;
+          color: #6d6d6d;
+          margin: 15px 0;
+        }
+        .card__text__number {
+          font-weight: 500;
+          font-size: 1.125;
+          line-height: 22px;
+          color: #0078c8;
+        }
+      }
+    }
+  }
+}

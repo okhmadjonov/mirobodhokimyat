@@ -10,19 +10,31 @@ import "./App.scss";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
+
+import Deputy from "../../pages/AdviceSection/Deputy/Deputy";
+import DeputySPA from "../../pages/AdviceSection/DeputySPA/DeputySPA";
+import Documents from "../../pages/AdviceSection/Documents/Documents";
+import Hakim from "../../pages/AdviceSection/Hakim/Hakim";
+
+import LastNews from "../../pages/PressCenter/LastNews/LastNews";
+import News from "../../pages/PressCenter/News/News";
+
+import "./App.scss";
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/management" element={<Management />} />
           <Route path="/targettaskfunction" element={<TargetTaskFunction />} />
           <Route path="/structure" element={<Structure />} />
           <Route path="/order" element={<Order />} />
           <Route path="*" element={<Navigate to="/" replace={true} />} />
+          <Route path="*" element={<Navigate to="/" replace={true} />} /> */}
+          <Route path="/deputy" element={<LastNews />} />
         </Routes>
         <Footer />
       </BrowserRouter>
