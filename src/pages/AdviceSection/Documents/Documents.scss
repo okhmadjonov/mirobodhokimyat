@@ -1,0 +1,15 @@
+.document {
+  width: 930px;
+  margin: 0 auto;
+  .document__text {
+    li {
+      padding: 20px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 1.25;
+      line-height: 24px;
+      background-color: #fff;
+      border-radius: 12px;
+    }
+  }
+}

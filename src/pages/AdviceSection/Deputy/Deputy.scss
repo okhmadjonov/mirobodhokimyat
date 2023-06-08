@@ -1,0 +1,40 @@
+.deputy {
+  .deputy__cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vw;
+
+    .deputy__card {
+      border-radius: 12px;
+      background-color: #fff;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      gap: 2vw;
+
+      .deputy__card__text {
+        .deputy__card__text__name {
+          font-weight: 600;
+          font-size: 1.25rem;
+          color: #000;
+        }
+        .deputy__card__text__job,
+        .deputy__card__text__address {
+          font-weight: 500;
+          font-size: 1.15rem;
+          color: #6d6d6d;
+        }
+
+        .deputy__card__text__job {
+          margin: 0.8rem 0;
+        }
+        .deputy__card__text__number {
+          font-weight: 500;
+          font-size: 1.15rem;
+          color: #0078c8;
+          margin-top: 0.8rem;
+        }
+      }
+    }
+  }
+}

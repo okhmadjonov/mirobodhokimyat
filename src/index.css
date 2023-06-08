@@ -1,26 +1,20 @@
-
-
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   text-decoration: none;
-
+  list-style: none;
 }
 
-html{
+html {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-
-  
 }
 
-body{
+body {
   margin: 0 auto;
   max-width: 1920px;
   height: 100%;
@@ -28,14 +22,17 @@ body{
   caret-color: transparent !important;
 }
 
-.container{
+.container {
   width: 80vw;
   height: 100%;
   max-width: 1410px;
   margin: 0 auto;
 }
 
-
-
-
 /* font-family: 'Montserrat', sans-serif; */
+
+.advance__title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 30px;
+}

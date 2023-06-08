@@ -1,0 +1,51 @@
+.deputySpa {
+  .deputySpa__block {
+    display: flex;
+    gap: 30px;
+    .deputySpa__block__left,
+    .deputySpa__block__right {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      width: 50%;
+    }
+
+    .deputySpa__block__left {
+      .deputySpa__block__left__cards {
+        .deputySpa__block__left__cards__card {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          p {
+            margin-top: 0.5rem;
+          }
+        }
+        .cards__text {
+          li {
+            margin-top: 40px;
+            h4 {
+              font-weight: 500;
+              font-size: 1rem;
+              color: #858585;
+              margin-bottom: 5px;
+            }
+            p {
+              font-weight: 500;
+              font-size: 1rem;
+              line-height: 20px;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+
+    .deputySpa__block__right {
+      margin: auto;
+      margin-top: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

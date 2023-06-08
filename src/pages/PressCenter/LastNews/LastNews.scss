@@ -1,0 +1,119 @@
+.lastNews {
+  display: flex;
+  gap: 30px;
+  .lastNews__left {
+    width: 70%;
+    .lastNews__left__title {
+      font-weight: 700;
+      font-size: 1.875rem;
+      line-height: 130%;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+    .lastNews__img {
+      .lastNews__img__about {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        gap: 30px;
+        .lastNews__img__about__inside {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          p {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 130%;
+            color: #858585;
+          }
+        }
+      }
+
+      .lastName__img-img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .lastNews__text {
+      p {
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 23px;
+        margin-top: 20px;
+      }
+      .lastNews__text__author {
+        margin-top: 30px;
+        h4 {
+          font-weight: 700;
+          font-size: 1.125rem;
+          margin-top: 6px;
+        }
+        span {
+          font-size: 1.125rem;
+          color: #858585;
+        }
+      }
+    }
+  }
+
+  .news_r {
+    width: 30%;
+    .lastNews__right {
+      border-radius: 12px;
+      background-color: #fff;
+      padding: 20px;
+      .lastNews__right__title {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 24px;
+        color: #000;
+        margin-bottom: 25px;
+      }
+      .lastNews__right__card {
+        margin-bottom: 20px;
+        .lastNews__right__card__desc {
+          font-weight: 500;
+          font-size: 1.15rem;
+          line-height: 23px;
+          margin-bottom: 15px;
+        }
+        .lastNews__right__card__about {
+          display: flex;
+          gap: 34px;
+          align-items: center;
+          border-bottom: 1px solid #e6e6e6;
+          padding-bottom: 18px;
+          .lastNews__right__card__about__inside {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+        }
+      }
+    }
+    .lastNews__right__keyWords {
+      padding: 20px;
+      background-color: #fff;
+      margin-top: 20px;
+      border-radius: 12px;
+      .lastNews__right__keyWords__title {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #000000;
+      }
+      .lastNews__right__keyWords__text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 25px;
+        p {
+          font-weight: 500;
+          font-size: 1.15rem;
+          line-height: 130%;
+          color: #0078c8;
+        }
+      }
+    }
+  }
+}
