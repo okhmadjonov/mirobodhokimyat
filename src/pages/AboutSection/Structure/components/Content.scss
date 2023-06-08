@@ -1,0 +1,29 @@
+.structure__content {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  h3 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875em;
+    line-height: 37px;
+    color: #000;
+  }
+  .structure__img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+    max-width: 1920px;
+    align-items: center;
+
+    img {
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+}

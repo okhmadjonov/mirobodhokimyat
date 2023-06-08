@@ -1,5 +1,6 @@
 import About from "../../pages/AboutSection/AboutHokimyat/AboutHokimyat";
 import Management from "../../pages/AboutSection/Management/Management";
+import Structure from "../../pages/AboutSection/Structure/Structure";
 import TargetTaskFunction from "../../pages/AboutSection/TargetTaskFunction/TargetTaskFunction";
 import Home from "../../pages/Home/Home";
 import Footer from "../Footer/Footer";
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/management" element={<Management />} />
           <Route path="/targettaskfunction" element={<TargetTaskFunction />} />
+          <Route path="/structure" element={<Structure />} />
           <Route path="*" element={<Navigate to="/" replace={true} />} />
         </Routes>
         <Footer />
