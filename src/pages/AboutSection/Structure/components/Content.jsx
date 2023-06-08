@@ -10,6 +10,19 @@ const Content = () => {
       <div className="structure__img">
         <img src={structure__img} alt="Structure" />
       </div>
+      <div className="container">
+        <div className="structure__description">
+          <p>Boshqaruv hodimlarning cheklangan umumiy soni - 41 nafar</p>
+          <p>
+            Qurilish bo’limi 1 ta boshqaruv va 2 ta ishlab chiqazish
+            hodimlaridan iborat
+          </p>
+          <p>
+            Texnik va xizmat ko’rsatuvchi xodimlar soni o’rnatilgan me’yorlarga
+            muvofiq belgilanadi
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

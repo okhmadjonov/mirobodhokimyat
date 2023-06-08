@@ -26,4 +26,24 @@
       margin: 0 auto;
     }
   }
+  .structure__description {
+    width: 67%;
+    height: 142px;
+    margin: 50px auto;
+    background: rgba(0, 120, 200, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    p {
+      width: 95%;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.25em;
+      line-height: 24px;
+      color: #0078c8;
+    }
+  }
 }
