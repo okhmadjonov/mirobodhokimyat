@@ -53,11 +53,11 @@ const Order = () => {
             </div>
           </div>
         </div>
-        <div className="map">
+        <div className="contact__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47977.01011206141!2d69.29647635!3d41.27484705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8aae2a839243%3A0x5dff3ea2aec089e1!2sMirabad%20District%2C%20Tashkent!5e0!3m2!1sen!2s!4v1686216462768!5m2!1sen!2s"
-            width="950"
-            height="600"
+            width="100%"
+            height="100%"
             title="This is a unique title"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
