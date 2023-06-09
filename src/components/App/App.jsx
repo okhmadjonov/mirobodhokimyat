@@ -23,6 +23,7 @@ import "./App.scss";
 import Vacancy from "../../pages/AboutSection/Vacancy/Vacancy";
 import Contact from "../../pages/AboutSection/Contact/Contact";
 import Division from "../../pages/AboutSection/Division/Division";
+import FaqOne from "../../pages/ServiceSection/FaqOne/FaqOne";
 function App() {
   return (
     <>
@@ -38,6 +39,7 @@ function App() {
           <Route path="/vacancy" element={<Vacancy />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/division" element={<Division />} />
+          <Route path="/faqone" element={<FaqOne />} />
           <Route path="*" element={<Navigate to="/" replace={true} />} />
           <Route path="/deputy" element={<LastNews />} />
         </Routes>
