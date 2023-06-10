@@ -16,7 +16,7 @@ const Content = () => {
       setIsOpen(id);
     }
   };
-  console.log(isOpen);
+ 
   return (
     <div className="faq__content">
       <div className="faq_content_left">

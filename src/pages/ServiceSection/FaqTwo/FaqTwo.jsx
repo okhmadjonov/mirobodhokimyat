@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FaqTwo.scss";
 import UsefullLinks from "../../../components/UsefullLinks/UsefullLinks";
 import { BsChevronDown, BsChevronRight } from "react-icons/bs";
 import satillate from "../../../assets/img/satillete.png";
 import map from "../../../assets/img/map.png";
+import faqtwoData from "./components/faqtwoData";
 import faqtwo__banner from "../../../assets/img/faqtwo__banner.png";
 const FaqTwo = () => {
+  const [isOpen, setIsOpen] = useState(null);
+  const handleClick = (id) => {
+    if (id === isOpen) {
+      setIsOpen(null);
+    } else {
+      setIsOpen(id);
+    }
+  };
+
   return (
     <div className="faqtwo">
       <div className="faqtwo__banner">
@@ -29,19 +39,36 @@ const FaqTwo = () => {
       <div className="container">
         <div className="faqtwo__content__wrapper">
           <div className="faqtwo__content__left">
-            <div className="content__left__card">
-              <div className="left__card__inner">
-                <div className="card__inner__title">
-                  <p>Законы Республики Узбекистан</p>
-                  <div className="chevron__btn">
-                    <BsChevronDown />
+            {faqtwoData.map((item, index) => (
+              <div
+                className={`content__left__card ${
+                  isOpen === item.id ? "active" : ""
+                }`}
+                onClick={() => handleClick(item.id)}
+                key={item.id}>
+                <div className="left__card__inner">
+                  <br />
+                  <div className="card__inner__title">
+                    <p>{item.title}</p>
+                    {/* <p>Законы Республики Узбекистан</p> */}
+                    <div className="chevron__btn">
+                      <BsChevronDown />
+                    </div>
+                  </div>
+                  <div className="card__inner__content">
+                    {item.subtitleItems.map((itemChild, index) => (
+                      <>
+                        <div className="inner__content__item" key={index.id}>
+                          <p>{itemChild.content}</p>
+                        </div>
+                        <br />
+                      </>
+                    ))}
+                    <br />
                   </div>
                 </div>
-                <div className="card__inner__content">
-                  <div className="inner__content__item"></div>
-                </div>
               </div>
-            </div>
+            ))}
           </div>
           <div className="faqtwo__content__right">
             <div className="content__right__card">
