@@ -1,0 +1,166 @@
+.faqtwo {
+  width: 100%;
+  height: 100%;
+  .faqtwo__banner {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(94.6deg, #28a8ea 0%, #23a1de 100%);
+    .container {
+      .banner__inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title__url {
+          width: 70%;
+          height: 70%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-around;
+
+          h3 {
+            width: 100%;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3em;
+            line-height: 49px;
+            color: #fff;
+          }
+          .faq_url {
+            cursor: pointer;
+            width: 100%;
+            height: 85px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 auto;
+            color: #c2eaff;
+            font-size: 1.125em;
+          }
+        }
+      }
+    }
+    .faqtwo__mark {
+      width: 20%;
+      height: 70%;
+      display: flex;
+      align-items: center;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .container {
+    .faqtwo__content__wrapper {
+      margin-top: 30px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .faqtwo__content__left {
+        width: 65%;
+        height: auto;
+        // border: 1px solid black;
+        .content__left__card {
+          width: 100%;
+          height: auto;
+          min-height: 60px;
+          background-color: #fff;
+          border-radius: 12px;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          .left__card__inner {
+            width: 95%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .card__inner__title {
+              width: 100%;
+              height: 60px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              cursor: pointer;
+              p {
+                font-family: "Montserrat";
+                font-size: 1.25em;
+                font-weight: 600;
+                line-height: 130%;
+                color: #000;
+              }
+              .chevron__btn {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.5em;
+                background-color: #0078c8;
+                cursor: pointer;
+              }
+            }
+
+            .card__inner__content {
+              margin-top: 30px;
+              width: 100%;
+              height: 100px;
+              display: none;
+
+              .inner__content__item {
+                width: 100%;
+                height: auto;
+                min-height: 60px;
+                background: #edebf3;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+      .faqtwo__content__right {
+        width: 31%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        cursor: pointer;
+        .content__right__card {
+          width: 100%;
+          height: 130px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          background-color: #fff;
+          border-radius: 12px;
+          p {
+            width: 239px;
+            height: 52px;
+            font-family: "Montserrat";
+            font-weight: 500;
+            font-size: 1.25em;
+            line-height: 130%;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
