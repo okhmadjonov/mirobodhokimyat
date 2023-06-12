@@ -26,6 +26,13 @@ import Division from "../../pages/AboutSection/Division/Division";
 import FaqOne from "../../pages/ServiceSection/FaqOne/FaqOne";
 import FaqTwo from "../../pages/ServiceSection/FaqTwo/FaqTwo";
 import OpenSource from "../../pages/ServiceSection/OpenSourceOne/OpenSource";
+import {
+  AboutSection,
+  AdviceSection,
+  AreaSection,
+  ServiceSection,
+} from "../Routes/Index";
+import Contacts from "../Contacts/Contacts";
 function App() {
   return (
     <>
@@ -33,20 +40,36 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/management" element={<Management />} />
-          <Route path="/targettaskfunction" element={<TargetTaskFunction />} />
-          <Route path="/structure" element={<Structure />} />
-          <Route path="/order" element={<Order />} />
-          <Route path="/vacancy" element={<Vacancy />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/division" element={<Division />} />
-          <Route path="/faqone" element={<FaqOne />} />
-          <Route path="/faqtwo" element={<FaqTwo />} />
-          <Route path="/opensource" element={<OpenSource />} />
-          <Route path="*" element={<Navigate to="/" replace={true} />} />
+          <Route path="/contact" element={<Contacts />} />
 
-          <Route path="/deputy" element={<LastNews />} />
+          {AboutSection.map((route) => (
+            <Route
+              path={`${route.path}`}
+              element={route.element}
+              key={route.id}
+            />
+          ))}
+          {AdviceSection.map((route) => (
+            <Route
+              path={`${route.path}`}
+              element={route.element}
+              key={route.id}
+            />
+          ))}
+          {ServiceSection.map((route) => (
+            <Route
+              path={`${route.path}`}
+              element={route.element}
+              key={route.id}
+            />
+          ))}
+          {AreaSection.map((route) => (
+            <Route
+              path={`${route.path}`}
+              element={route.element}
+              key={route.id}
+            />
+          ))}
         </Routes>
         <Footer />
       </BrowserRouter>

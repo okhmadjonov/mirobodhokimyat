@@ -1,2 +1,3 @@
 import GeneralInfo from "./GeneralInfo/GeneralInfo";
-export { GeneralInfo };
+
+export  default GeneralInfo ;
