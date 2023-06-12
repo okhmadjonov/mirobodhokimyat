@@ -1,0 +1,36 @@
+.old_buildings {
+  width: 70%;
+  margin-top: 5rem;
+  text-align: center;
+  &_title {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  &_content {
+    .cards {
+      background-color: #fff;
+      padding: 3rem;
+      padding-bottom: 4rem;
+      display: block;
+      border-radius: 10px;
+      margin: 2rem 0;
+      h1 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      .flex {
+        display: flex;
+        gap: 1rem;
+        p {
+          font-size: 1.1rem;
+          font-weight: 500;
+          margin: 1rem 0
+        }
+        img{
+            width: 100%;
+        }
+      }
+    }
+  }
+}

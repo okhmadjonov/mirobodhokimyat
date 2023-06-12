@@ -11,6 +11,7 @@ import DeputySPA from "../../pages/AdviceSection/DeputySPA/DeputySPA";
 import Documents from "../../pages/AdviceSection/Documents/Documents";
 import Hakim from "../../pages/AdviceSection/Hakim/Hakim";
 import GeneralInfo from "../../pages/AreaSection";
+import MapMirobot from "../../pages/AreaSection/MapMirobot/MapMirobot";
 import FaqOne from "../../pages/ServiceSection/FaqOne/FaqOne";
 import FaqTwo from "../../pages/ServiceSection/FaqTwo/FaqTwo";
 import OpenSource from "../../pages/ServiceSection/OpenSourceOne/OpenSource";
@@ -96,6 +97,12 @@ export const AreaSection = [
     path: "/area/info",
     element: <GeneralInfo />,
     name: "Общая информация",
+  },
+  {
+    id: 2,
+    path: "/area/map",
+    element: <MapMirobot />,
+    name: "Карта района",
   },
   // {id: , path: "/area/" ,element :  , name: ""},
 ];
