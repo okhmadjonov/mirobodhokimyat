@@ -26,6 +26,7 @@ import Division from "../../pages/AboutSection/Division/Division";
 import FaqOne from "../../pages/ServiceSection/FaqOne/FaqOne";
 import FaqTwo from "../../pages/ServiceSection/FaqTwo/FaqTwo";
 import OpenSource from "../../pages/ServiceSection/OpenSourceOne/OpenSource";
+import MassMedia from "../../pages/PressCenter/MassMedia/MassMedia";
 function App() {
   return (
     <>
@@ -50,6 +51,7 @@ function App() {
           <Route path="/hakim" element={<Hakim />} />
           <Route path="/news" element={<News />} />
           <Route path="/lastnews" element={<LastNews />} />
+          <Route path="/massmedia" element={<MassMedia />} />
           <Route path="*" element={<Navigate to="/" replace={true} />} />
         </Routes>
         <Footer />
