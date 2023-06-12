@@ -3,7 +3,7 @@ import "./UsefullLinks.scss";
 import useData from "./useData";
 const UsefullLinks = () => {
   return (
-    <div className="usefull__links">
+    <div className="usefull__links container">
       <div className="usefull__title">Полезные ссылки</div>
       <div className="usefull__content">
         <div className="usefull_items">

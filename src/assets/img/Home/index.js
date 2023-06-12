@@ -43,6 +43,26 @@ import photoGalerySlide4 from "./photoGalery/4.png";
 import photoGalerySlide5 from "./photoGalery/5.png";
 import photoGalerySlide6 from "./photoGalery/6.png";
 import photoGalerySlide7 from "./photoGalery/7.png";
+
+// faq images
+import faqImage from "./QA-icon.webp";
+
+// subscription
+import subscriptionBack from "../subscriptionBack.png";
+
+// ask questions images
+import iphone12imgae from "../iphone12.png";
+
+// contacts images
+import locationIcon from "./contacts/map-pin.png";
+import mailIcon from "./contacts/mail.png";
+import phoneIcon from "./contacts/phone.png";
+import clockIcon from "./contacts/clock.png";
+import twitterIcon from "./contacts/group-3.png";
+import facebookIcon from "./contacts/Group-1.png";
+import instagramIcon from "./contacts/Group-2.png";
+import whatsupIcon from "./contacts/Group.png";
+
 export {
   ruImg,
   gerbImg,
@@ -78,4 +98,15 @@ export {
   photoGalerySlide5,
   photoGalerySlide6,
   photoGalerySlide7,
+  faqImage,
+  subscriptionBack,
+  iphone12imgae,
+  locationIcon,
+  mailIcon,
+  phoneIcon,
+  clockIcon,
+  twitterIcon,
+  facebookIcon,
+  instagramIcon,
+  whatsupIcon,
 };

@@ -45,6 +45,7 @@ function App() {
           <Route path="/faqtwo" element={<FaqTwo />} />
           <Route path="/opensource" element={<OpenSource />} />
           <Route path="*" element={<Navigate to="/" replace={true} />} />
+
           <Route path="/deputy" element={<LastNews />} />
         </Routes>
         <Footer />

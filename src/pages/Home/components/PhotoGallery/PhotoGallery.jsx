@@ -11,6 +11,7 @@ import {
   photoGalerySlide6,
   photoGalerySlide7,
 } from "../../../../assets/img/Home";
+import { Autoplay } from "swiper";
 function PhotoGallery() {
   const data = [
     photoGalerySlide1,
@@ -23,16 +24,70 @@ function PhotoGallery() {
   ];
   return (
     <div className="photo_gallery">
-      <div className="photo_gallery_title">
-        <h1>Международные встречи и мероприятия</h1>
+      <div className="photo_gallery_title container">
+        <h1>Фотогалерея</h1>
         <a href="/">
           Посмотреть Все <img src={arrowRight} alt="" />
         </a>
       </div>
       <div className="photo_gallery_content">
-        <Swiper>
-          
-        </Swiper>
+        <div className="sliders_item">
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={2}
+            breakpoints={{
+              1200: {
+                slidesPerView: 3,
+              },
+              1500: {
+                slidesPerView: 4,
+              },
+            }}
+            spaceBetween={20}
+            speed={2500 * 3}
+            autoplay={{
+              delay: 1,
+              disableOnInteraction: false,
+              reverseDirection: false,
+              pauseOnMouseEnter: true,
+            }}
+          >
+            {data.map((img) => (
+              <SwiperSlide>
+                <img src={img} alt="" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        <div className="sliders_item">
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={2}
+            spaceBetween={20}
+            speed={2500 * 3}
+            breakpoints={{
+              1200: {
+                slidesPerView: 3,
+              },
+              1500: {
+                slidesPerView: 4,
+              },
+            }}
+            autoplay={{
+              delay: 1,
+              disableOnInteraction: false,
+              reverseDirection: true,
+              pauseOnMouseEnter: true,
+            }}
+          >
+            {data.map((img) => (
+              <SwiperSlide>
+                <img src={img} alt="" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );
