@@ -13,6 +13,7 @@ import Hakim from "../../pages/AdviceSection/Hakim/Hakim";
 import GeneralInfo from "../../pages/AreaSection";
 import MassMedia from "../../pages/PressCenter/MassMedia/MassMedia";
 import News from "../../pages/PressCenter/News/News";
+import Statistics from "../../pages/PressCenter/Statistics/Statistics";
 import FaqOne from "../../pages/ServiceSection/FaqOne/FaqOne";
 import FaqTwo from "../../pages/ServiceSection/FaqTwo/FaqTwo";
 import OpenSource from "../../pages/ServiceSection/OpenSourceOne/OpenSource";
@@ -110,10 +111,16 @@ export const PressCenterSection = [
     name: "Новости",
   },
   {
-    id: 1,
+    id: 2,
     path: "/press_center/massmedia",
     element: <MassMedia />,
     name: "СМИ о нас",
+  },
+  {
+    id: 3,
+    path: "/press_center/statistics",
+    element: <Statistics />,
+    name: "Статистика",
   },
   // {id: , path: "/area/" ,element :  , name: ""},
 ];
