@@ -24,16 +24,16 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
-          {/* <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/management" element={<Management />} />
           <Route path="/targettaskfunction" element={<TargetTaskFunction />} />
           <Route path="/structure" element={<Structure />} />
           <Route path="/order" element={<Order />} />
           <Route path="*" element={<Navigate to="/" replace={true} />} />
-          <Route path="*" element={<Navigate to="/" replace={true} />} /> */}
+          <Route path="*" element={<Navigate to="/" replace={true} />} />
           <Route path="/deputy" element={<LastNews />} />
         </Routes>
         <Footer />

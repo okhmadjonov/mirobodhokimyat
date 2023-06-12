@@ -7,6 +7,9 @@
   text-decoration: none;
   list-style: none;
 }
+*::selection {
+  background-color: transparent;
+}
 
 html {
   width: 100%;

@@ -24,7 +24,9 @@ const Navbar = () => {
       <div className="header ">
         <div className="header_top container">
           <div className="left">
-            <img src={gerbImg} alt="" />
+            <NavLink to={"/"}>
+              <img src={gerbImg} alt="" />
+            </NavLink>
             <h4>
               Хокимият Мирабадского <br /> района города Ташкента
             </h4>
