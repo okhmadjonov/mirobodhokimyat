@@ -29,20 +29,47 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border: 1px solid teal;
 
       .video__cards {
         width: 100%;
-        height: 90%;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 48%);
+        row-gap: 20px;
+
+        .card {
+          width: 100%;
+          height: 336px;
+
+          .card__video {
+            width: 100%;
+            height: 280px;
+          }
+        }
+        .card__title {
+          width: 100%;
+          height: 46px;
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.125em;
+            line-height: 130%;
+            color: #000;
+          }
+        }
       }
       .slider__scroller {
         width: 100%;
-        height: 5%;
+        margin-top: 50px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         gap: 10px;
-        border: 1px solid black;
+
         .scoll__item {
           width: 40px;
           height: 40px;
@@ -62,6 +89,10 @@
             color: #fff;
             background: #0078c8;
           }
+        }
+        .active {
+          color: #fff;
+          background: #0078c8;
         }
       }
     }
