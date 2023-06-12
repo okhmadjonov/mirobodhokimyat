@@ -20,6 +20,12 @@ import LastNews from "../../pages/PressCenter/LastNews/LastNews";
 import News from "../../pages/PressCenter/News/News";
 
 import "./App.scss";
+import Vacancy from "../../pages/AboutSection/Vacancy/Vacancy";
+import Contact from "../../pages/AboutSection/Contact/Contact";
+import Division from "../../pages/AboutSection/Division/Division";
+import FaqOne from "../../pages/ServiceSection/FaqOne/FaqOne";
+import FaqTwo from "../../pages/ServiceSection/FaqTwo/FaqTwo";
+import OpenSource from "../../pages/ServiceSection/OpenSourceOne/OpenSource";
 function App() {
   return (
     <>
@@ -32,8 +38,14 @@ function App() {
           <Route path="/targettaskfunction" element={<TargetTaskFunction />} />
           <Route path="/structure" element={<Structure />} />
           <Route path="/order" element={<Order />} />
+          <Route path="/vacancy" element={<Vacancy />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/division" element={<Division />} />
+          <Route path="/faqone" element={<FaqOne />} />
+          <Route path="/faqtwo" element={<FaqTwo />} />
+          <Route path="/opensource" element={<OpenSource />} />
           <Route path="*" element={<Navigate to="/" replace={true} />} />
-          <Route path="*" element={<Navigate to="/" replace={true} />} />
+
           <Route path="/deputy" element={<LastNews />} />
         </Routes>
         <Footer />
