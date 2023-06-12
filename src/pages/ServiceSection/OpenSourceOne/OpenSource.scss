@@ -73,6 +73,7 @@
         // border: 1px solid black;
         .content__left__card {
           width: 100%;
+          margin-top: 20px;
           height: auto;
           min-height: 60px;
           background-color: #fff;
@@ -84,7 +85,7 @@
           justify-content: center;
           .left__card__inner {
             width: 95%;
-            height: 100%;
+            height: auto;
             display: flex;
             flex-direction: column;
 
@@ -102,33 +103,28 @@
                 line-height: 130%;
                 color: #000;
               }
-              .chevron__btn {
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                font-size: 1.5em;
-                background-color: #0078c8;
-                cursor: pointer;
-              }
             }
 
             .card__inner__content {
               margin-top: 30px;
               width: 100%;
-              height: 100px;
+              height: auto;
               display: none;
 
               .inner__content__item {
                 width: 100%;
                 height: auto;
                 min-height: 60px;
-                background: #edebf3;
+                // background: #edebf3;
                 border-radius: 10px;
               }
+            }
+            .card__inner__content_active {
+              margin-top: 30px;
+              width: 100%;
+              height: 100%;
+              display: block;
+              transition: all 0.5s ease-in-out;
             }
           }
         }

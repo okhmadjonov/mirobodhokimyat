@@ -19,6 +19,7 @@ import {
   AboutSection,
   AdviceSection,
   AreaSection,
+  PressCenterSection,
   ServiceSection,
 } from "../Routes/Index";
 const Navbar = () => {
@@ -70,8 +71,7 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition
-                >
+                  transition>
                   {AboutSection.map((item) => (
                     <MenuItem key={item.id}>
                       <NavLink to={item.path}> {item.name}</NavLink>
@@ -90,8 +90,7 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition
-                >
+                  transition>
                   {AdviceSection.map((item) => (
                     <MenuItem key={item.id}>
                       <NavLink to={item.path}>{item.name}</NavLink>
@@ -110,23 +109,12 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition
-                >
-                  <MenuItem>
-                    <NavLink>Новости</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink> СМИ о нас</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink> Статистика</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink> Инфографика</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink> Фотогалерея</NavLink>
-                  </MenuItem>
+                  transition>
+                  {PressCenterSection.map((item) => (
+                    <MenuItem key={item.id}>
+                      <NavLink to={item.path}>{item.name}</NavLink>
+                    </MenuItem>
+                  ))}
                 </Menu>
                 <div className="h-line"></div>
                 <Menu
@@ -140,8 +128,7 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition
-                >
+                  transition>
                   {ServiceSection.map((item) => (
                     <MenuItem key={item.id}>
                       <NavLink to={item.path}> {item.name}</NavLink>
@@ -159,8 +146,7 @@ const Navbar = () => {
                         alt=""
                       />
                     </MenuButton>
-                  )}
-                >
+                  )}>
                   {AreaSection.map((item) => (
                     <MenuItem key={item.id}>
                       <NavLink to={item.path}>{item.name}</NavLink>
