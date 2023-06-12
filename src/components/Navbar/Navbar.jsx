@@ -15,6 +15,13 @@ import {
   volumeImgBlue,
 } from "../../assets/img/Home";
 import { NavLink, useLocation } from "react-router-dom";
+import {
+  AboutSection,
+  AdviceSection,
+  AreaSection,
+  PressCenterSection,
+  ServiceSection,
+} from "../Routes/Index";
 const Navbar = () => {
   const location = useLocation();
   const chevronIcon =
@@ -24,7 +31,9 @@ const Navbar = () => {
       <div className="header ">
         <div className="header_top container">
           <div className="left">
-            <img src={gerbImg} alt="" />
+            <NavLink to={"/"}>
+              <img src={gerbImg} alt="" />
+            </NavLink>
             <h4>
               Хокимият Мирабадского <br /> района города Ташкента
             </h4>
@@ -62,26 +71,12 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition
-                >
-                  <MenuItem>
-                    <NavLink> Цели, задачи и функции</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink>Руководство</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink>Аппарат</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink>Порядок приема граждан</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink>Подразделения</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink>Вакансии</NavLink>
-                  </MenuItem>
+                  transition>
+                  {AboutSection.map((item) => (
+                    <MenuItem key={item.id}>
+                      <NavLink to={item.path}> {item.name}</NavLink>
+                    </MenuItem>
+                  ))}
                 </Menu>
                 <div className="h-line"></div>
                 <Menu
@@ -95,14 +90,12 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition
-                >
-                  <MenuItem>
-                    <NavLink>Депутаты районного Кенгаша</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink>Принятые документы</NavLink>
-                  </MenuItem>
+                  transition>
+                  {AdviceSection.map((item) => (
+                    <MenuItem key={item.id}>
+                      <NavLink to={item.path}>{item.name}</NavLink>
+                    </MenuItem>
+                  ))}
                 </Menu>
                 <div className="h-line"></div>
                 <Menu
@@ -116,23 +109,12 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition
-                >
-                  <MenuItem>
-                    <NavLink>Новости</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink> СМИ о нас</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink> Статистика</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink> Инфографика</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink> Фотогалерея</NavLink>
-                  </MenuItem>
+                  transition>
+                  {PressCenterSection.map((item) => (
+                    <MenuItem key={item.id}>
+                      <NavLink to={item.path}>{item.name}</NavLink>
+                    </MenuItem>
+                  ))}
                 </Menu>
                 <div className="h-line"></div>
                 <Menu
@@ -146,14 +128,12 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition
-                >
-                  <MenuItem>
-                    <NavLink> Часто задаемые вопросы</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink> Нормативные документы</NavLink>
-                  </MenuItem>
+                  transition>
+                  {ServiceSection.map((item) => (
+                    <MenuItem key={item.id}>
+                      <NavLink to={item.path}> {item.name}</NavLink>
+                    </MenuItem>
+                  ))}
                 </Menu>
                 <div className="h-line"></div>
                 <Menu
@@ -166,20 +146,12 @@ const Navbar = () => {
                         alt=""
                       />
                     </MenuButton>
-                  )}
-                >
-                  <MenuItem>
-                    <NavLink>Общая информация</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink>Рейтинг района</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink>Интересная место</NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink>Карта района</NavLink>
-                  </MenuItem>
+                  )}>
+                  {AreaSection.map((item) => (
+                    <MenuItem key={item.id}>
+                      <NavLink to={item.path}>{item.name}</NavLink>
+                    </MenuItem>
+                  ))}
                 </Menu>
                 <div className="h-line"></div>
                 <NavLink>

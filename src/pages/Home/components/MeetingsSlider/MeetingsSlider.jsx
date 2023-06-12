@@ -49,16 +49,10 @@ function MeetingsSlider() {
       </div>
       <div className="meetings_content">
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination]}
           slidesPerView={1}
           pagination={pagination}
           spaceBetween={20}
-          speed={1000}
-          autoplay={{
-            delay: 1,
-            disableOnInteraction: false,
-            reverseDirection: true,
-          }}
         >
           {data.map((item) => (
             <SwiperSlide>

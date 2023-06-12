@@ -1,0 +1,27 @@
+.photo_gallery {
+  margin-top: 100px;
+  &_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    h1 {
+      font-size: 1.8rem;
+    }
+    a {
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      color: #0078c8;
+      text-transform: uppercase;
+      img {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  &_content{
+    img{
+        width: 100%;
+    }
+  }
+}
