@@ -11,6 +11,7 @@ import DeputySPA from "../../pages/AdviceSection/DeputySPA/DeputySPA";
 import Documents from "../../pages/AdviceSection/Documents/Documents";
 import Hakim from "../../pages/AdviceSection/Hakim/Hakim";
 import GeneralInfo from "../../pages/AreaSection";
+import Infographics from "../../pages/PressCenter/Infographics/Infographics";
 import MassMedia from "../../pages/PressCenter/MassMedia/MassMedia";
 import News from "../../pages/PressCenter/News/News";
 import Statistics from "../../pages/PressCenter/Statistics/Statistics";
@@ -121,6 +122,12 @@ export const PressCenterSection = [
     path: "/press_center/statistics",
     element: <Statistics />,
     name: "Статистика",
+  },
+  {
+    id: 4,
+    path: "/press_center/infographics",
+    element: <Infographics />,
+    name: "Инфографика",
   },
   // {id: , path: "/area/" ,element :  , name: ""},
 ];
