@@ -1,0 +1,53 @@
+.allPlaces {
+  margin-top: 1.875rem;
+  .allPlaces__title {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.3125rem;
+    color: #000;
+    margin-bottom: 3.125rem;
+  }
+  .allPlaces__nav {
+    display: flex;
+    gap: 3.125rem;
+    margin-bottom: 4.375rem;
+    li {
+      font-weight: 500;
+      font-size: 1.125rem;
+      color: #858585;
+    }
+    .activeLi {
+      font-weight: 500;
+      font-size: 1.125rem;
+      color: #0078c8;
+      border-bottom: 0.3125rem solid #0078c8;
+      padding-bottom: 1.25rem;
+      border-radius: 0.3125rem;
+    }
+  }
+  .allPlaces__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.875rem;
+    row-gap: 3.375rem;
+    .cards__card {
+      .cards__card__img {
+        border-radius: 0.75rem 0.75rem 0rem 0rem;
+        overflow: hidden;
+      }
+      .cards__card__text {
+        padding: 1.25rem;
+        .text__title {
+          font-weight: 600;
+          font-size: 1.25rem;
+          color: #000;
+          margin-bottom: 1.25rem;
+        }
+        .text__subTitle {
+          font-weight: 500;
+          color: #000;
+        }
+      }
+    }
+  }
+}

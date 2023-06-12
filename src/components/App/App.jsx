@@ -64,6 +64,13 @@ function App() {
               key={route.id}
             />
           ))}
+          {AreaSection.map(route => (
+            <Route
+              path={`${route.path}`}
+              element={route.element}
+              key={route.id}
+            />
+          ))}
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
