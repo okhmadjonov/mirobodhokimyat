@@ -27,6 +27,14 @@ import FaqOne from "../../pages/ServiceSection/FaqOne/FaqOne";
 import FaqTwo from "../../pages/ServiceSection/FaqTwo/FaqTwo";
 import OpenSource from "../../pages/ServiceSection/OpenSourceOne/OpenSource";
 import MassMedia from "../../pages/PressCenter/MassMedia/MassMedia";
+import {
+  AboutSection,
+  AdviceSection,
+  AreaSection,
+  PressCenterSection,
+  ServiceSection,
+} from "../Routes/Index";
+import Contacts from "../Contacts/Contacts";
 function App() {
   return (
     <>
@@ -34,25 +42,45 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/management" element={<Management />} />
-          <Route path="/targettaskfunction" element={<TargetTaskFunction />} />
-          <Route path="/structure" element={<Structure />} />
-          <Route path="/order" element={<Order />} />
-          <Route path="/vacancy" element={<Vacancy />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/division" element={<Division />} />
-          <Route path="/faqone" element={<FaqOne />} />
-          <Route path="/faqtwo" element={<FaqTwo />} />
-          <Route path="/opensource" element={<OpenSource />} />
-          <Route path="/deputy" element={<Deputy />} />
-          <Route path="/deputyspa" element={<DeputySPA />} />
-          <Route path="/documents" element={<Documents />} />
-          <Route path="/hakim" element={<Hakim />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/lastnews" element={<LastNews />} />
-          <Route path="/massmedia" element={<MassMedia />} />
-          <Route path="*" element={<Navigate to="/" replace={true} />} />
+          <Route path="/contact" element={<Contacts />} />
+
+          {AboutSection.map((route) => (
+            <Route
+              path={`${route.path}`}
+              element={route.element}
+              key={route.id}
+            />
+          ))}
+          {AdviceSection.map((route) => (
+            <Route
+              path={`${route.path}`}
+              element={route.element}
+              key={route.id}
+            />
+          ))}
+          {ServiceSection.map((route) => (
+            <Route
+              path={`${route.path}`}
+              element={route.element}
+              key={route.id}
+            />
+          ))}
+          {AreaSection.map((route) => (
+            <Route
+              path={`${route.path}`}
+              element={route.element}
+              key={route.id}
+            />
+          ))}
+
+
+{PressCenterSection.map((route) => (
+            <Route
+              path={`${route.path}`}
+              element={route.element}
+              key={route.id}
+            />
+          ))}
         </Routes>
         <Footer />
       </BrowserRouter>

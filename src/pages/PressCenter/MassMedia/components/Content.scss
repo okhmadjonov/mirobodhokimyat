@@ -1,0 +1,113 @@
+.massmedia__content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .massmedia__content__header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    h3 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.5em;
+    }
+  }
+  .massmedia__content__body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    .video__news {
+      width: 65%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid teal;
+
+      .video__cards {
+        width: 100%;
+        height: 90%;
+      }
+      .slider__scroller {
+        width: 100%;
+        height: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        border: 1px solid black;
+        .scoll__item {
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          color: #000;
+          background: #fff;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1em;
+          line-height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            transition: all 0.5s ease-in-out;
+            color: #fff;
+            background: #0078c8;
+          }
+        }
+      }
+    }
+    .other__news {
+      width: 31%;
+      height: auto;
+      background: #fff;
+      border-radius: 12px;
+      cursor: pointer;
+      .lastNews__right {
+        border-radius: 12px;
+        background-color: #fff;
+        padding: 20px;
+        .lastNews__right__title {
+          font-weight: 700;
+          font-size: 1.25rem;
+          line-height: 24px;
+          color: #000;
+          margin-bottom: 25px;
+        }
+        .lastNews__right__card {
+          margin-bottom: 20px;
+          .lastNews__right__card__desc {
+            font-weight: 500;
+            font-size: 1.15rem;
+            line-height: 23px;
+            margin-bottom: 15px;
+          }
+          .lastNews__right__card__about {
+            display: flex;
+            gap: 34px;
+            align-items: center;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 18px;
+            .lastNews__right__card__about__inside {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .massmedia__content__footer {
+    width: 100%;
+    height: auto;
+  }
+}
