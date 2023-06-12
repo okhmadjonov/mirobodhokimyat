@@ -44,9 +44,13 @@ function App() {
           <Route path="/faqone" element={<FaqOne />} />
           <Route path="/faqtwo" element={<FaqTwo />} />
           <Route path="/opensource" element={<OpenSource />} />
+          <Route path="/deputy" element={<Deputy />} />
+          <Route path="/deputyspa" element={<DeputySPA />} />
+          <Route path="/documents" element={<Documents />} />
+          <Route path="/hakim" element={<Hakim />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/lastnews" element={<LastNews />} />
           <Route path="*" element={<Navigate to="/" replace={true} />} />
-
-          <Route path="/deputy" element={<LastNews />} />
         </Routes>
         <Footer />
       </BrowserRouter>
