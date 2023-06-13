@@ -15,7 +15,7 @@ import {
 } from "../Routes/Index";
 import { Suspense, lazy, useState } from "react";
 import Loader from "../Loader/Loader";
-const Contacts = lazy(() => import("../Contacts/Contacts"));
+const Contacts = lazy(() => import("../../pages/AboutSection/Contact/Contact"));
 function App() {
   const Lang = localStorage.getItem("language");
   const [voiceTurn, setVoiceTurn] = useState(false);
