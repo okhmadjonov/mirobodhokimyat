@@ -71,7 +71,8 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition>
+                  transition
+                >
                   {AboutSection.map((item) => (
                     <MenuItem key={item.id}>
                       <NavLink to={item.path}> {item.name}</NavLink>
@@ -90,7 +91,8 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition>
+                  transition
+                >
                   {AdviceSection.map((item) => (
                     <MenuItem key={item.id}>
                       <NavLink to={item.path}>{item.name}</NavLink>
@@ -109,7 +111,8 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition>
+                  transition
+                >
                   {PressCenterSection.map((item) => (
                     <MenuItem key={item.id}>
                       <NavLink to={item.path}>{item.name}</NavLink>
@@ -128,7 +131,8 @@ const Navbar = () => {
                       />
                     </MenuButton>
                   )}
-                  transition>
+                  transition
+                >
                   {ServiceSection.map((item) => (
                     <MenuItem key={item.id}>
                       <NavLink to={item.path}> {item.name}</NavLink>
@@ -146,15 +150,26 @@ const Navbar = () => {
                         alt=""
                       />
                     </MenuButton>
-                  )}>
+                  )}
+                >
                   {AreaSection.map((item) => (
-                    <MenuItem key={item.id}>
-                      <NavLink to={item.path}>{item.name}</NavLink>
-                    </MenuItem>
+                    <div key={item.id}>
+                      {item.name ? (
+                        <MenuItem key={item.id}>
+                          <NavLink to={item.path}>{item.name}</NavLink>
+                        </MenuItem>
+                      ) : (
+                        ""
+                      )}
+                    </div>
                   ))}
+
+                  <MenuItem>
+                    <a href="https://argos.uz/en/indicator">Рейтинг района</a>
+                  </MenuItem>
                 </Menu>
                 <div className="h-line"></div>
-                <NavLink>
+                <NavLink to={"/contact"}>
                   <span>Контакты</span>
                 </NavLink>
                 <div className="h-line"></div>

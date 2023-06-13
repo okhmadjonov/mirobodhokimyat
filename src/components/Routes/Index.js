@@ -1,116 +1,137 @@
-import About from '../../pages/AboutSection/AboutHokimyat/AboutHokimyat';
-import Contact from '../../pages/AboutSection/Contact/Contact';
-import Division from '../../pages/AboutSection/Division/Division';
-import Management from '../../pages/AboutSection/Management/Management';
-import Order from '../../pages/AboutSection/Order/Order';
-import Structure from '../../pages/AboutSection/Structure/Structure';
-import TargetTaskFunction from '../../pages/AboutSection/TargetTaskFunction/TargetTaskFunction';
-import Vacancy from '../../pages/AboutSection/Vacancy/Vacancy';
-import Deputy from '../../pages/AdviceSection/Deputy/Deputy';
-import DeputySPA from '../../pages/AdviceSection/DeputySPA/DeputySPA';
-import Documents from '../../pages/AdviceSection/Documents/Documents';
-import Hakim from '../../pages/AdviceSection/Hakim/Hakim';
-import GeneralInfo from '../../pages/AreaSection';
-import AllPlaces from '../../pages/AreaSection/Interesting/AllPlaces/AllPlaces';
-import PlacesItem from '../../pages/AreaSection/Interesting/AllPlaces/Components/PlacesItem';
-import MapMirobot from '../../pages/AreaSection/MapMirobot/MapMirobot';
-import MassMedia from '../../pages/PressCenter/MassMedia/MassMedia';
-import News from '../../pages/PressCenter/News/News';
-import FaqOne from '../../pages/ServiceSection/FaqOne/FaqOne';
-import FaqTwo from '../../pages/ServiceSection/FaqTwo/FaqTwo';
-import OpenSource from '../../pages/ServiceSection/OpenSourceOne/OpenSource';
+import { lazy } from "react";
+const Division = lazy(() =>
+  import("../../pages/AboutSection/Division/Division")
+);
+const Management = lazy(() =>
+  import("../../pages/AboutSection/Management/Management")
+);
+const Order = lazy(() => import("../../pages/AboutSection/Order/Order"));
+const Structure = lazy(() =>
+  import("../../pages/AboutSection/Structure/Structure")
+);
+const TargetTaskFunction = lazy(() =>
+  import("../../pages/AboutSection/TargetTaskFunction/TargetTaskFunction")
+);
+const Vacancy = lazy(() => import("../../pages/AboutSection/Vacancy/Vacancy"));
+const Deputy = lazy(() => import("../../pages/AdviceSection/Deputy/Deputy"));
+const Documents = lazy(() =>
+  import("../../pages/AdviceSection/Documents/Documents")
+);
+const Hakim = lazy(() => import("../../pages/AdviceSection/Hakim/Hakim"));
+const GeneralInfo = lazy(() => import("../../pages/AreaSection"));
+const AllPlaces = lazy(() =>
+  import("../../pages/AreaSection/Interesting/AllPlaces/AllPlaces")
+);
+const PlacesItem = lazy(() =>
+  import("../../pages/AreaSection/Interesting/AllPlaces/Components/PlacesItem")
+);
+const MapMirobot = lazy(() =>
+  import("../../pages/AreaSection/MapMirobot/MapMirobot")
+);
+const MassMedia = lazy(() =>
+  import("../../pages/PressCenter/MassMedia/MassMedia")
+);
+const News = lazy(() => import("../../pages/PressCenter/News/News"));
+const FaqOne = lazy(() => import("../../pages/ServiceSection/FaqOne/FaqOne"));
+const FaqTwo = lazy(() => import("../../pages/ServiceSection/FaqTwo/FaqTwo"));
+const OpenSource = lazy(() =>
+  import("../../pages/ServiceSection/OpenSourceOne/OpenSource")
+);
+const About = lazy(() =>
+  import("../../pages/AboutSection/AboutHokimyat/AboutHokimyat")
+);
 
 export const AboutSection = [
-  { id: 6, path: '/about/hokimyat', element: <About />, name: 'О хокимияте' },
+  { id: 6, path: "/about/hokimyat", element: <About />, name: "О хокимияте" },
 
   {
     id: 5,
-    path: '/about/target_task',
+    path: "/about/target_task",
     element: <TargetTaskFunction />,
-    name: 'Цели, задачи и функции',
+    name: "Цели, задачи и функции",
   },
   {
     id: 2,
-    path: '/about/management',
+    path: "/about/management",
     element: <Management />,
-    name: 'Руководство',
+    name: "Руководство",
   },
   {
     id: 3,
-    path: '/about/order',
+    path: "/about/order",
     element: <Order />,
-    name: 'Порядок приема граждан',
+    name: "Порядок приема граждан",
   },
   {
     id: 1,
-    path: '/about/division',
+    path: "/about/division",
     element: <Division />,
-    name: 'Подразделения',
+    name: "Подразделения",
   },
 
   {
     id: 4,
-    path: '/about/structure',
+    path: "/about/structure",
     element: <Structure />,
-    name: 'Стркуктура',
+    name: "Стркуктура",
   },
 
-  { id: 7, path: '/about/vacancy', element: <Vacancy />, name: 'Вакансии' },
+  { id: 7, path: "/about/vacancy", element: <Vacancy />, name: "Вакансии" },
 ];
 
 export const AdviceSection = [
   {
     id: 1,
-    path: '/council/devputy',
+    path: "/council/devputy",
     element: <Deputy />,
-    name: 'Депутаты районного Кенгаша ',
+    name: "Депутаты районного Кенгаша ",
   },
   {
     id: 3,
-    path: '/council/documents',
+    path: "/council/documents",
     element: <Documents />,
-    name: 'Принятые документы',
+    name: "Принятые документы",
   },
-  { id: 4, path: '/council/assistants', element: <Hakim />, name: '' },
+  { id: 4, path: "/council/assistants", element: <Hakim />, name: "" },
 ];
 
 export const ServiceSection = [
   {
     id: 1,
-    path: '/service/faq',
+    path: "/service/faq",
     element: <FaqOne />,
-    name: 'Часто задавемые вопросы',
+    name: "Часто задавемые вопросы",
   },
   {
     id: 2,
-    path: '/service/faq_two',
+    path: "/service/faq_two",
     element: <FaqTwo />,
-    name: 'Нормативные документы',
+    name: "Нормативные документы",
   },
   {
     id: 3,
-    path: '/service/open_data',
+    path: "/service/open_data",
     element: <OpenSource />,
-    name: 'Открытые данные',
+    name: "Открытые данные",
   },
 ];
 
 export const AreaSection = [
   {
     id: 1,
-    path: '/area/info',
+    path: "/area/info",
     element: <GeneralInfo />,
-    name: 'Общая информация',
+    name: "Общая информация",
   },
   {
     id: 3,
-    path: '/area/interesting-places',
+    path: "/area/interesting-places",
     element: <AllPlaces />,
-    name: 'Интересные места',
+    name: "Интересные места",
   },
   {
-    id: 3,
-    path: '/area/interesting-places/:id',
+    id: 4,
+    path: "/area/interesting-places/:id",
     element: <PlacesItem />,
   },
   {
@@ -119,21 +140,20 @@ export const AreaSection = [
     element: <MapMirobot />,
     name: "Карта района",
   },
-  // {id: , path: "/area/" ,element :  , name: ""},
 ];
 
 export const PressCenterSection = [
   {
     id: 1,
-    path: '/press_center/news',
+    path: "/press_center/news",
     element: <News />,
-    name: 'Новости',
+    name: "Новости",
   },
   {
     id: 2,
-    path: '/press_center/massmedia',
+    path: "/press_center/massmedia",
     element: <MassMedia />,
-    name: 'СМИ о нас',
+    name: "СМИ о нас",
   },
 
   // {id: , path: "/area/" ,element :  , name: ""},
