@@ -17,11 +17,17 @@ import { Suspense, lazy, useState } from "react";
 import Loader from "../Loader/Loader";
 const Contacts = lazy(() => import("../Contacts/Contacts"));
 function App() {
+  const Lang = localStorage.getItem("language");
   const [voiceTurn, setVoiceTurn] = useState(false);
   const handleMouseUp = () => {
     if (voiceTurn) {
       const selectedText = window.getSelection().toString();
       const value = new SpeechSynthesisUtterance(selectedText);
+      if (Lang === "uz") {
+        value.lang = "uz-UZ";
+      } else if (Lang === "ru") {
+        value.lang = "ru-RU";
+      }
       window.speechSynthesis.speak(value);
       console.log(`Selected text: ${window.getSelection().toString()}`);
     }
