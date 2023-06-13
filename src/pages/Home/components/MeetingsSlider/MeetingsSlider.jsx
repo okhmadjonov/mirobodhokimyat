@@ -55,7 +55,7 @@ function MeetingsSlider() {
           spaceBetween={20}
         >
           {data.map((item) => (
-            <SwiperSlide>
+            <SwiperSlide key={item.id}>
               <div className="item">
                 <img className="left" src={item.img} alt="" />
                 <div className="right">

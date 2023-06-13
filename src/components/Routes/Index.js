@@ -1,6 +1,13 @@
 import { lazy } from "react";
-import Infographics from "../../pages/PressCenter/Infographics/Infographics";
-import Statistics from "../../pages/PressCenter/Statistics/Statistics";
+const Statistics = lazy(() =>
+  import("../../pages/PressCenter/Statistics/Statistics")
+);
+const VideoGallery = lazy(() =>
+  import("../../pages/PressCenter/VideoGallery/VideoGallery")
+);
+const Infographics = lazy(() =>
+  import("../../pages/PressCenter/Infographics/Infographics")
+);
 const Division = lazy(() =>
   import("../../pages/AboutSection/Division/Division")
 );
@@ -169,6 +176,13 @@ export const PressCenterSection = [
     path: "/press_center/infographics",
     element: <Infographics />,
     name: "Инфографика",
+  },
+
+  {
+    id: 6,
+    path: "/press_center/videoGallery",
+    element: <VideoGallery />,
+    name: "Видеогалерея",
   },
   // {id: , path: "/area/" ,element :  , name: ""},
 ];

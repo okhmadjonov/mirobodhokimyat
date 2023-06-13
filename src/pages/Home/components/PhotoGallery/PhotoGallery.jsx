@@ -53,7 +53,7 @@ function PhotoGallery() {
             }}
           >
             {data.map((img) => (
-              <SwiperSlide>
+              <SwiperSlide key={img}>
                 <img src={img} alt="" />
               </SwiperSlide>
             ))}
@@ -82,7 +82,7 @@ function PhotoGallery() {
             }}
           >
             {data.map((img) => (
-              <SwiperSlide>
+              <SwiperSlide key={img}>
                 <img src={img} alt="" />
               </SwiperSlide>
             ))}

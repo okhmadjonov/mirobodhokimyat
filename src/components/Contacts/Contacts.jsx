@@ -44,7 +44,7 @@ function Contacts() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.577838837075!2d69.28225891542291!3d41.29629147927269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8acda8c445d5%3A0x3ba1c2ed0259621c!2sKhokimiyat%20Mirabadskogo%20Rayona%2C%2018%20Nukus%20Street%2C%20Tashkent%20100015!5e0!3m2!1sen!2s!4v1645448093240!5m2!1sen!2s"
           loading="lazy"
           title="google-map"
-          class="contacts-map"
+          className="contacts-map"
         ></iframe>
       </div>
     </div>
