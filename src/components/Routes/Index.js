@@ -194,5 +194,11 @@ export const PressCenterSection = [
     element: <VideoGallery />,
     name: "navbar.press_center.videoGallery",
   },
+  {
+    id: 5,
+    path: "/press_center/photogallery",
+    element: <Photogallery />,
+    name: "Фотогалерея",
+  },
   // {id: , path: "/area/" ,element :  , name: ""},
 ];

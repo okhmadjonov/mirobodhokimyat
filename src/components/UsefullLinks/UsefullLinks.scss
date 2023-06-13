@@ -43,10 +43,10 @@
           position: absolute;
           width: 154px;
           height: 99px;
-          // border-radius: 50%;
           overflow: hidden;
-          top: 0;
-          left: 29%;
+          left: 50%;
+          top: 28%;
+          transform: translate(-50%, -50%);
           z-index: 2;
           background-position: center;
           background-repeat: no-repeat;
@@ -66,7 +66,7 @@
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
           p {
-            // width: 287px;
+            width: 320px;
             // height: 44px;
             font-family: "Montserrat";
             font-style: normal;
