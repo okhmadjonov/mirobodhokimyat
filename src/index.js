@@ -8,10 +8,11 @@ import { I18nextProvider } from "react-i18next";
 
 import translation_uz from "./Services/I18N/Translations/Translation_uz.json";
 import translation_ru from "./Services/I18N/Translations/Translation_ru.json";
+const Lang = localStorage.getItem("language");
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: "ru",
+  lng: Lang,
   resources: {
     ru: {
       translation: translation_ru,

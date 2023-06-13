@@ -15,19 +15,48 @@
         font-weight: 400;
         margin-left: 1rem;
       }
-      .gerblogo{
-        font-size: 3rem;
+      .gerblogo {
+        width: 4rem;
+        padding: .7rem 0;
       }
     }
     .right {
       display: flex;
       .item {
+        .szh-menu-button {
+          cursor: pointer;
+          img {
+            width: 1.5rem;
+          }
+        }
+        .szh-menu {
+          min-width: 7rem;
+        }
         display: flex;
         align-items: center;
-        margin: 0 1.2rem;
+        padding: 0 1.2rem;
+        cursor: pointer;
         p {
-          margin: 0 0.5rem;
+          margin-left: 0.5rem;
+        }
+        h5 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #000;
           font-size: 1rem;
+          font-weight: 500;
+          cursor: pointer;
+          span {
+            margin-left: 1rem;
+          }
+          img {
+            width: 1.5rem;
+          }
+        }
+        &.active_voice{
+          border:1px solid #0078c8;
+          border-radius: 100px;
         }
       }
     }
@@ -104,6 +133,7 @@
       .left {
         h4 {
           color: white;
+          width: 16rem;
         }
       }
       .right {

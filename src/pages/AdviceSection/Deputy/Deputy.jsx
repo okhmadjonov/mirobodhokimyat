@@ -101,7 +101,7 @@ const Deputy = () => {
       <h2 className='advance__title'>Депутаты районного Кенгаша</h2>
       <div className='deputy__cards'>
         {deputy.map(item => (
-          <div className='deputy__card'>
+          <div className='deputy__card' key={item.image}>
             <div className='deputy__card__img'>
               <img src={item.image} alt='deputy' />
             </div>

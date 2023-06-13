@@ -10,36 +10,42 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 const Content = () => {
   const data = [
     {
+      id: 1,
       title:
         "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
       date: "01.11.2021",
       view: 252,
     },
     {
+      id: 2,
       title:
         "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
       date: "01.11.2021",
       view: 252,
     },
     {
+      id: 3,
       title:
         "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
       date: "01.11.2021",
       view: 252,
     },
     {
+      id: 4,
       title:
         "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
       date: "01.11.2021",
       view: 252,
     },
     {
+      id: 5,
       title:
         "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
       date: "01.11.2021",
       view: 252,
     },
     {
+      id: 6,
       title:
         "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
       date: "01.11.2021",
@@ -65,10 +71,11 @@ const Content = () => {
                   height="280"
                   src="https://www.youtube.com/embed/FjGTtkWT_Pw"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write;
                    encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="card__title">
                 <p>Прототип нового сервиса — это как далёкий барабанный бой</p>
@@ -84,9 +91,10 @@ const Content = () => {
                   height="280"
                   src="https://www.youtube.com/embed/FkUXn5bOwzk"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="card__title">
                 <p>Может показаться странным, но кровь стынет в жилах</p>
@@ -102,9 +110,10 @@ const Content = () => {
                   height="280"
                   src="https://www.youtube.com/embed/a3Ls3epVu9I"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="card__title">
                 <p>Мелочь, а приятно: частокол на границе починят</p>
@@ -120,10 +129,11 @@ const Content = () => {
                   height="280"
                   src="https://www.youtube.com/embed/FjGTtkWT_Pw"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write;
                    encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="card__title">
                 <p>Прототип нового сервиса — это как далёкий барабанный бой</p>
@@ -139,9 +149,10 @@ const Content = () => {
                   height="280"
                   src="https://www.youtube.com/embed/FkUXn5bOwzk"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="card__title">
                 <p>Может показаться странным, но кровь стынет в жилах</p>
@@ -157,9 +168,10 @@ const Content = () => {
                   height="280"
                   src="https://www.youtube.com/embed/a3Ls3epVu9I"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="card__title">
                 <p>Мелочь, а приятно: частокол на границе починят</p>
@@ -175,9 +187,10 @@ const Content = () => {
                   height="280"
                   src="https://www.youtube.com/embed/BETvlPU-mWA"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="card__title">
                 <p>
@@ -207,7 +220,7 @@ const Content = () => {
             <h3 className="lastNews__right__title">Другие новости</h3>
 
             {data.map((item) => (
-              <div className="lastNews__right__card">
+              <div className="lastNews__right__card" key={item.id}>
                 <p className="lastNews__right__card__desc">{item.title}</p>
                 <div className="lastNews__right__card__about">
                   <div className="lastNews__right__card__about__inside">

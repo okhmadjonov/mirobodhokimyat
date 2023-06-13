@@ -3,7 +3,7 @@ import "./Loader.scss";
 function Loader() {
   return (
     <div className="loader">
-      <div class="wrapper">
+      <div className="wrapper">
         <button>
           Loading ...
           <svg>

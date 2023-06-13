@@ -17,9 +17,9 @@ function VideoGallery() {
             loading="lazy"
             src="https://www.youtube-nocookie.com/embed/rp9B_4QqB3s"
             title="YouTube-video-player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
+            allowFullScreen=""
           ></iframe>{" "}
         </div>
 
@@ -29,9 +29,9 @@ function VideoGallery() {
             loading="lazy"
             src="https://www.youtube-nocookie.com/embed/Q1sZqVaeM6c"
             title="YouTube-video-player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
+            allowFullScreen=""
           ></iframe>
         </div>
         <div className="item">
@@ -40,9 +40,9 @@ function VideoGallery() {
             loading="lazy"
             src="https://www.youtube-nocookie.com/embed/8Fic5Wg7lfo"
             title="YouTube-video-player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
+            allowFullScreen=""
           ></iframe>
         </div>
         <div className="item">
@@ -51,9 +51,9 @@ function VideoGallery() {
             loading="lazy"
             src="https://www.youtube-nocookie.com/embed/LmRBNGlaVVw"
             title="YouTube-video-player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
+            allowFullScreen=""
           ></iframe>
         </div>
       </div>

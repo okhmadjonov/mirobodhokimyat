@@ -51,41 +51,51 @@ const About = lazy(() =>
 );
 
 export const AboutSection = [
-  { id: 6, path: "/about/hokimyat", element: <About />, name: "О хокимияте" },
+  {
+    id: 6,
+    path: "/about/hokimyat",
+    element: <About />,
+    name: "navbar.about.hokimyat",
+  },
 
   {
     id: 5,
     path: "/about/target_task",
     element: <TargetTaskFunction />,
-    name: "Цели, задачи и функции",
+    name: "navbar.about.target_task",
   },
   {
     id: 2,
     path: "/about/management",
     element: <Management />,
-    name: "Руководство",
+    name: "navbar.about.management",
   },
   {
     id: 3,
     path: "/about/order",
     element: <Order />,
-    name: "Порядок приема граждан",
+    name: "navbar.about.order",
   },
   {
     id: 1,
     path: "/about/division",
     element: <Division />,
-    name: "Подразделения",
+    name: "navbar.about.division",
   },
 
   {
     id: 4,
     path: "/about/structure",
     element: <Structure />,
-    name: "Стркуктура",
+    name: "navbar.about.structure",
   },
 
-  { id: 7, path: "/about/vacancy", element: <Vacancy />, name: "Вакансии" },
+  {
+    id: 7,
+    path: "/about/vacancy",
+    element: <Vacancy />,
+    name: "navbar.about.vacancy",
+  },
 ];
 
 export const AdviceSection = [
@@ -93,13 +103,13 @@ export const AdviceSection = [
     id: 1,
     path: "/council/devputy",
     element: <Deputy />,
-    name: "Депутаты районного Кенгаша ",
+    name: "navbar.council.deputy",
   },
   {
     id: 3,
     path: "/council/documents",
     element: <Documents />,
-    name: "Принятые документы",
+    name: "navbar.council.documents",
   },
   { id: 4, path: "/council/assistants", element: <Hakim />, name: "" },
 ];
@@ -109,19 +119,19 @@ export const ServiceSection = [
     id: 1,
     path: "/service/faq",
     element: <FaqOne />,
-    name: "Часто задавемые вопросы",
+    name: "navbar.service.faq",
   },
   {
     id: 2,
     path: "/service/faq_two",
     element: <FaqTwo />,
-    name: "Нормативные документы",
+    name: "navbar.service.faq_two",
   },
   {
     id: 3,
     path: "/service/open_data",
     element: <OpenSource />,
-    name: "Открытые данные",
+    name: "navbar.service.open_data",
   },
 ];
 
@@ -130,13 +140,13 @@ export const AreaSection = [
     id: 1,
     path: "/area/info",
     element: <GeneralInfo />,
-    name: "Общая информация",
+    name: "navbar.area.info",
   },
   {
     id: 3,
     path: "/area/interesting-places",
     element: <AllPlaces />,
-    name: "Интересные места",
+    name: "navbar.area.interesting_places",
   },
   {
     id: 4,
@@ -147,7 +157,7 @@ export const AreaSection = [
     id: 2,
     path: "/area/map",
     element: <MapMirobot />,
-    name: "Карта района",
+    name: "navbar.area.map",
   },
 ];
 
@@ -156,33 +166,33 @@ export const PressCenterSection = [
     id: 1,
     path: "/press_center/news",
     element: <News />,
-    name: "Новости",
+    name: "navbar.press_center.news",
   },
   {
     id: 2,
     path: "/press_center/massmedia",
     element: <MassMedia />,
-    name: "СМИ о нас",
+    name: "navbar.press_center.massmedia",
   },
 
   {
     id: 3,
     path: "/press_center/statistics",
     element: <Statistics />,
-    name: "Статистика",
+    name: "navbar.press_center.statistics",
   },
   {
     id: 4,
     path: "/press_center/infographics",
     element: <Infographics />,
-    name: "Инфографика",
+    name: "navbar.press_center.infographics",
   },
 
   {
     id: 6,
     path: "/press_center/videoGallery",
     element: <VideoGallery />,
-    name: "Видеогалерея",
+    name: "navbar.press_center.videoGallery",
   },
   // {id: , path: "/area/" ,element :  , name: ""},
 ];

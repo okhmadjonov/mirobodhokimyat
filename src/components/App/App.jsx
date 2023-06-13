@@ -1,8 +1,3 @@
-import About from "../../pages/AboutSection/AboutHokimyat/AboutHokimyat";
-import Management from "../../pages/AboutSection/Management/Management";
-import Order from "../../pages/AboutSection/Order/Order";
-import Structure from "../../pages/AboutSection/Structure/Structure";
-import TargetTaskFunction from "../../pages/AboutSection/TargetTaskFunction/TargetTaskFunction";
 import Home from "../../pages/Home/Home";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
@@ -18,13 +13,22 @@ import {
   PressCenterSection,
   ServiceSection,
 } from "../Routes/Index";
-import Contacts from "../Contacts/Contacts";
-import { Suspense } from "react";
+import { Suspense, lazy, useState } from "react";
 import Loader from "../Loader/Loader";
+const Contacts = lazy(() => import("../Contacts/Contacts"));
 function App() {
+  const [voiceTurn, setVoiceTurn] = useState(false);
+  const handleMouseUp = () => {
+    if (voiceTurn) {
+      const selectedText = window.getSelection().toString();
+      const value = new SpeechSynthesisUtterance(selectedText);
+      window.speechSynthesis.speak(value);
+      console.log(`Selected text: ${window.getSelection().toString()}`);
+    }
+  };
   return (
-    <>
-      <Navbar />
+    <div onMouseUp={handleMouseUp}>
+      <Navbar setVoiceTurn={setVoiceTurn} voiceTurn={voiceTurn} />
       <Routes>
         <Route
           path="/"
@@ -90,7 +94,7 @@ function App() {
       </Routes>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

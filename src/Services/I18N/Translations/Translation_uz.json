@@ -1,3 +1,44 @@
 {
-    
+  "navbar": {
+    "title": "Тошкент шаҳар Миробод тумани ҳокимлиги",
+    "contact": "Kontaktlar",
+    "search": "Qidirish",
+    "eye": "Maxsus qobiliyatlar",
+    "voice": "Ovoz chiqarib o'qing",
+    "about": {
+      "title": "Hokimlik haqida",
+      "hokimyat": "Hokimlik haqida",
+      "target_task": "Maqsadlar, vazifalar va funktsiyalar",
+      "management": "Boshqaruv",
+      "order": "Fuqarolarni qabul qilish tartibi",
+      "division": "Bo'limlar",
+      "structure": "Tuzilishi",
+      "vacancy": "Vakansiyalar"
+    },
+    "council": {
+      "title": "Mahalliy kengash",
+      "deputy": "Tuman Kengashi deputatlari",
+      "documents": "Qabul qilingan hujjatlar"
+    },
+    "service": {
+      "title": "Interaktiv xizmatlar",
+      "faq": "Ko'p so'raladigan savollar",
+      "faq_two": "Qoidalar",
+      "open_data": "Ochiq ma'lumotlar"
+    },
+    "area": {
+      "title": "Hudud",
+      "info": "Umumiy ma'lumot",
+      "interesting_places": "Qiziqarli joylar",
+      "map": "Tuman xaritasi"
+    },
+    "press_center": {
+      "title": "Matbuot markazi",
+      "news": "Yangiliklar",
+      "massmedia": "Biz haqimizda OAV",
+      "statistics": "Statistika",
+      "infographics": "Infografika",
+      "videoGallery": "Video galereya"
+    }
+  }
 }
