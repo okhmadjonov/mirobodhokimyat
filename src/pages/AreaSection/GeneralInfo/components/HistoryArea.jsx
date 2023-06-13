@@ -1,9 +1,76 @@
 import React from "react";
 import "./HistoryArea.scss";
+import { NavLink } from "react-router-dom";
+import {
+  chevronLeftGray,
+  storyAreaImage,
+} from "../../../../assets/img/AreaSection";
+import { arrowRight } from "../../../../assets/img/Home";
 function HistoryArea() {
-  return <div>
-    
-  </div>;
+  return (
+    <div className="history_area container">
+      <div className="route_back">
+        <NavLink to={"/"}>Главный</NavLink>
+        <img src={chevronLeftGray} alt="" />
+        <p>История Мирабадского района</p>
+      </div>
+
+      <div className="history_area_content">
+        <div className="left">
+          <h1>История Мирабадского района</h1>
+          {parag.map((item) => (
+            <p key={item}>{item}</p>
+          ))}
+        </div>
+        <div className="right">
+          <img src={storyAreaImage} alt="" />
+          <div className="statistics_area">
+            <h1>Статистика прироста населения в районе</h1>
+            <div className="item">
+              <h3>1926 г.</h3>
+              <div className="item_inner">
+                <p style={{ width: "35%" }}>32.3 тыс. Человек</p>
+              </div>
+            </div>
+
+            <div className="item">
+              <h3>1956 г.</h3>
+              <div className="item_inner">
+                <p style={{ width: "55%" }}>71.7 тыс. Человек</p>
+              </div>
+            </div>
+            <div className="item">
+              <h3>1970 г.</h3>
+              <div className="item_inner">
+                <p style={{ width: "65%" }}>91.4 тыс. Человек</p>
+              </div>
+            </div>
+            <div className="item">
+              <h3>1979 г.</h3>
+              <div className="item_inner">
+                <p style={{ width: "70%" }}>101.9 тыс. Человек</p>
+              </div>
+            </div>
+            <div className="item">
+              <h3>2004 г.</h3>
+              <div className="item_inner">
+                <p style={{ width: "85%" }}>122.8 тыс. Человек</p>
+              </div>
+            </div>
+            <div className="item">
+              <h3>2019 г.</h3>
+              <div className="item_inner">
+                <p style={{ width: "95%" }}>137.1 тыс. Человек</p>
+              </div>
+            </div>
+            <div className="link">
+              <p>Mirobod tumani barcha hokimlari</p> <img src={arrowRight} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 const parag = [

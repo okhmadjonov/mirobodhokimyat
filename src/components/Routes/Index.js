@@ -1,23 +1,47 @@
-import About from "../../pages/AboutSection/AboutHokimyat/AboutHokimyat";
-import Contact from "../../pages/AboutSection/Contact/Contact";
-import Division from "../../pages/AboutSection/Division/Division";
-import Management from "../../pages/AboutSection/Management/Management";
-import Order from "../../pages/AboutSection/Order/Order";
-import Structure from "../../pages/AboutSection/Structure/Structure";
-import TargetTaskFunction from "../../pages/AboutSection/TargetTaskFunction/TargetTaskFunction";
-import Vacancy from "../../pages/AboutSection/Vacancy/Vacancy";
-import Deputy from "../../pages/AdviceSection/Deputy/Deputy";
-import DeputySPA from "../../pages/AdviceSection/DeputySPA/DeputySPA";
-import Documents from "../../pages/AdviceSection/Documents/Documents";
-import Hakim from "../../pages/AdviceSection/Hakim/Hakim";
-import GeneralInfo from "../../pages/AreaSection";
+import { lazy } from "react";
 import Infographics from "../../pages/PressCenter/Infographics/Infographics";
-import MassMedia from "../../pages/PressCenter/MassMedia/MassMedia";
-import News from "../../pages/PressCenter/News/News";
 import Statistics from "../../pages/PressCenter/Statistics/Statistics";
-import FaqOne from "../../pages/ServiceSection/FaqOne/FaqOne";
-import FaqTwo from "../../pages/ServiceSection/FaqTwo/FaqTwo";
-import OpenSource from "../../pages/ServiceSection/OpenSourceOne/OpenSource";
+const Division = lazy(() =>
+  import("../../pages/AboutSection/Division/Division")
+);
+const Management = lazy(() =>
+  import("../../pages/AboutSection/Management/Management")
+);
+const Order = lazy(() => import("../../pages/AboutSection/Order/Order"));
+const Structure = lazy(() =>
+  import("../../pages/AboutSection/Structure/Structure")
+);
+const TargetTaskFunction = lazy(() =>
+  import("../../pages/AboutSection/TargetTaskFunction/TargetTaskFunction")
+);
+const Vacancy = lazy(() => import("../../pages/AboutSection/Vacancy/Vacancy"));
+const Deputy = lazy(() => import("../../pages/AdviceSection/Deputy/Deputy"));
+const Documents = lazy(() =>
+  import("../../pages/AdviceSection/Documents/Documents")
+);
+const Hakim = lazy(() => import("../../pages/AdviceSection/Hakim/Hakim"));
+const GeneralInfo = lazy(() => import("../../pages/AreaSection"));
+const AllPlaces = lazy(() =>
+  import("../../pages/AreaSection/Interesting/AllPlaces/AllPlaces")
+);
+const PlacesItem = lazy(() =>
+  import("../../pages/AreaSection/Interesting/AllPlaces/Components/PlacesItem")
+);
+const MapMirobot = lazy(() =>
+  import("../../pages/AreaSection/MapMirobot/MapMirobot")
+);
+const MassMedia = lazy(() =>
+  import("../../pages/PressCenter/MassMedia/MassMedia")
+);
+const News = lazy(() => import("../../pages/PressCenter/News/News"));
+const FaqOne = lazy(() => import("../../pages/ServiceSection/FaqOne/FaqOne"));
+const FaqTwo = lazy(() => import("../../pages/ServiceSection/FaqTwo/FaqTwo"));
+const OpenSource = lazy(() =>
+  import("../../pages/ServiceSection/OpenSourceOne/OpenSource")
+);
+const About = lazy(() =>
+  import("../../pages/AboutSection/AboutHokimyat/AboutHokimyat")
+);
 
 export const AboutSection = [
   { id: 6, path: "/about/hokimyat", element: <About />, name: "О хокимияте" },
@@ -101,7 +125,23 @@ export const AreaSection = [
     element: <GeneralInfo />,
     name: "Общая информация",
   },
-  // {id: , path: "/area/" ,element :  , name: ""},
+  {
+    id: 3,
+    path: "/area/interesting-places",
+    element: <AllPlaces />,
+    name: "Интересные места",
+  },
+  {
+    id: 4,
+    path: "/area/interesting-places/:id",
+    element: <PlacesItem />,
+  },
+  {
+    id: 2,
+    path: "/area/map",
+    element: <MapMirobot />,
+    name: "Карта района",
+  },
 ];
 
 export const PressCenterSection = [
@@ -117,6 +157,7 @@ export const PressCenterSection = [
     element: <MassMedia />,
     name: "СМИ о нас",
   },
+
   {
     id: 3,
     path: "/press_center/statistics",
