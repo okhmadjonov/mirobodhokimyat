@@ -43,10 +43,10 @@
           position: absolute;
           width: 154px;
           height: 99px;
-          // border-radius: 50%;
           overflow: hidden;
-          top: 0;
-          left: 22%;
+          left: 50%;
+          top: 28%;
+          transform: translate(-50%, -50%);
           z-index: 2;
           background-position: center;
           background-repeat: no-repeat;
