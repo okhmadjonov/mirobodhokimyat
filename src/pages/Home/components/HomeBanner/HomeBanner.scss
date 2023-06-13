@@ -1,28 +1,36 @@
 .homebanner {
   width: 100%;
   height: 100vh;
-  background-image: url("../../../../assets/img/HomeBannerImg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 66.38%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 49.1%),
+    rgba(0, 0, 0, 0.4);
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -999;
+    position: absolute;
+    top: 0;
+  }
   .homebanner__container {
     position: relative;
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 66.38%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 49.1%),
-      rgba(0, 0, 0, 0.4);
-
+    z-index: 9999;
     h1 {
       position: absolute;
-      bottom: 5rem;
+      bottom:5rem;
       color: #fff;
       font-size: 3.3rem;
+      z-index: 9999;
     }
   }
 }

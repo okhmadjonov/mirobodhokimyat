@@ -66,7 +66,10 @@ import whatsupIcon from "./contacts/Group.png";
 // uzb flag
 import uzbFlag from "./uzb_flag.png";
 
+// video
+import homeVideo from "../Home/video1.mp4";
 export {
+  homeVideo,
   ruImg,
   uzbFlag,
   gerbImg,
