@@ -30,7 +30,7 @@ function App() {
           <Route
             path="/"
             element={
-              <Suspense fallback={<Loader/>}>
+              <Suspense fallback={<Loader />}>
                 <Home />
               </Suspense>
             }
@@ -38,7 +38,7 @@ function App() {
           <Route
             path="/contact"
             element={
-              <Suspense fallback={<Loader/>}>
+              <Suspense fallback={<Loader />}>
                 <Contacts />
               </Suspense>
             }
@@ -48,9 +48,7 @@ function App() {
             <Route
               path={`${route.path}`}
               element={
-                <Suspense fallback={<Loader/>}>
-                  {route.element}
-                </Suspense>
+                <Suspense fallback={<Loader />}>{route.element}</Suspense>
               }
               key={route.id}
             />
@@ -59,9 +57,7 @@ function App() {
             <Route
               path={`${route.path}`}
               element={
-                <Suspense fallback={<Loader/>}>
-                  {route.element}
-                </Suspense>
+                <Suspense fallback={<Loader />}>{route.element}</Suspense>
               }
               key={route.id}
             />
@@ -70,9 +66,7 @@ function App() {
             <Route
               path={`${route.path}`}
               element={
-                <Suspense fallback={<Loader/>}>
-                  {route.element}
-                </Suspense>
+                <Suspense fallback={<Loader />}>{route.element}</Suspense>
               }
               key={route.id}
             />
@@ -81,9 +75,7 @@ function App() {
             <Route
               path={`${route.path}`}
               element={
-                <Suspense fallback={<Loader/>}>
-                  {route.element}
-                </Suspense>
+                <Suspense fallback={<Loader />}>{route.element}</Suspense>
               }
               key={route.id}
             />
@@ -93,9 +85,7 @@ function App() {
             <Route
               path={`${route.path}`}
               element={
-                <Suspense fallback={<Loader/>}>
-                  {route.element}
-                </Suspense>
+                <Suspense fallback={<Loader />}>{route.element}</Suspense>
               }
               key={route.id}
             />
@@ -104,9 +94,7 @@ function App() {
             <Route
               path={`${route.path}`}
               element={
-                <Suspense fallback={<Loader/>}>
-                  {route.element}
-                </Suspense>
+                <Suspense fallback={<Loader />}>{route.element}</Suspense>
               }
               key={route.id}
             />
@@ -114,7 +102,7 @@ function App() {
           <Route path="*" element={<Home />} />
         </Routes>
 
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );

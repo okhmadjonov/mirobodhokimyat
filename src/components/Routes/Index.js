@@ -1,6 +1,7 @@
 import { lazy } from "react";
 import Infographics from "../../pages/PressCenter/Infographics/Infographics";
 import Statistics from "../../pages/PressCenter/Statistics/Statistics";
+import Photogallery from "../../pages/PressCenter/Photogallery/Photogallery";
 const Division = lazy(() =>
   import("../../pages/AboutSection/Division/Division")
 );
@@ -169,6 +170,12 @@ export const PressCenterSection = [
     path: "/press_center/infographics",
     element: <Infographics />,
     name: "Инфографика",
+  },
+  {
+    id: 5,
+    path: "/press_center/photogallery",
+    element: <Photogallery />,
+    name: "Фотогалерея",
   },
   // {id: , path: "/area/" ,element :  , name: ""},
 ];
