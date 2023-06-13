@@ -2,6 +2,7 @@ import { lazy } from "react";
 import Infographics from "../../pages/PressCenter/Infographics/Infographics";
 import Statistics from "../../pages/PressCenter/Statistics/Statistics";
 import Photogallery from "../../pages/PressCenter/Photogallery/Photogallery";
+import Contact from "../../pages/AboutSection/Contact/Contact";
 const Division = lazy(() =>
   import("../../pages/AboutSection/Division/Division")
 );
@@ -76,10 +77,16 @@ export const AboutSection = [
     id: 4,
     path: "/about/structure",
     element: <Structure />,
-    name: "Стркуктура",
+    name: "Структура",
   },
 
   { id: 7, path: "/about/vacancy", element: <Vacancy />, name: "Вакансии" },
+  {
+    id: 8,
+    path: "/about/contact",
+    element: <Contact />,
+    name: "Контакты",
+  },
 ];
 
 export const AdviceSection = [
