@@ -49,6 +49,9 @@ const OpenSource = lazy(() =>
 const About = lazy(() =>
   import("../../pages/AboutSection/AboutHokimyat/AboutHokimyat")
 );
+const Photogallery = lazy(() =>
+  import("../../pages/PressCenter/Photogallery/Photogallery")
+);
 
 export const AboutSection = [
   {
