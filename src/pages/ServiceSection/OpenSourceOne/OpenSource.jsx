@@ -23,11 +23,11 @@ const OpenSource = () => {
               <div className="opensource_url">
                 <p>Главный</p>
                 <BsChevronRight />
-                <p>Открытые данные</p>
+                <p>Статистика</p>
               </div>
             </div>
 
-            <div className="opensource__mark">
+            <div className="opensource__stat">
               <img src={opensource__banner} alt="FaqTwo" />
             </div>
           </div>
