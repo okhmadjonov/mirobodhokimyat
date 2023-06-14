@@ -215,7 +215,7 @@ export const PressCenterSection = [
     name: "Фотогалерея",
   },
   {
-    id: 6,
+    id: 7,
     path: "/press_center/news/:id",
     element: <LastNews />,
   },
