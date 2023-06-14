@@ -108,23 +108,24 @@
             .card__inner__content {
               margin-top: 30px;
               width: 100%;
-              height: auto;
-              display: none;
+              display: grid;
+              grid-template-rows: 0fr;
+              overflow: hidden;
+              transition: grid-template-rows 200ms;
+             
 
               .inner__content__item {
                 width: 100%;
                 height: auto;
-                min-height: 60px;
+          
                 // background: #edebf3;
                 border-radius: 10px;
+                min-height: 0;
+             
               }
-            }
-            .card__inner__content_active {
-              margin-top: 30px;
-              width: 100%;
-              height: 100%;
-              display: block;
-              transition: all 0.5s ease-in-out;
+              &.active {
+                grid-template-rows: 1fr;
+              }
             }
           }
         }

@@ -9,8 +9,11 @@ import newspaper from "../../../assets/img/newspaper.png";
 import opensource__banner from "../../../assets/img/open__source.png";
 const OpenSource = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const handleClick = () => {
-    setIsOpen(!isOpen);
+  const handleClick = (id) => {
+    if (id === isOpen) {
+      return setIsOpen(null);
+    }
+    setIsOpen(id);
   };
 
   return (
@@ -38,15 +41,15 @@ const OpenSource = () => {
           <div className="opensource__content__left">
             <div className="content__left__card">
               <div className="left__card__inner">
-                <div className="card__inner__title" onClick={handleClick}>
+                <div
+                  className="card__inner__title"
+                  onClick={() => handleClick(1)}>
                   <p>Название открытых данных</p>
                 </div>
                 <div
-                  className={
-                    isOpen
-                      ? "card__inner__content_active"
-                      : "card__inner__content"
-                  }>
+                  className={`card__inner__content ${
+                    isOpen === 1 ? "active" : ""
+                  }`}>
                   <div className="inner__content__item">
                     <p>
                       Для современного мира базовый вектор развития влечет за
@@ -119,15 +122,15 @@ const OpenSource = () => {
             </div>
             <div className="content__left__card">
               <div className="left__card__inner">
-                <div className="card__inner__title" onClick={handleClick}>
+                <div
+                  className="card__inner__title"
+                  onClick={() => handleClick(2)}>
                   <p>Название открытых данных</p>
                 </div>
                 <div
-                  className={
-                    isOpen
-                      ? "card__inner__content_active"
-                      : "card__inner__content"
-                  }>
+                  className={`card__inner__content ${
+                    isOpen === 2 ? "active" : ""
+                  }`}>
                   <div className="inner__content__item">
                     <p>
                       Для современного мира базовый вектор развития влечет за
