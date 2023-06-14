@@ -1,82 +1,88 @@
-import './LastNews.scss';
-import { bigImg, eye, calendar } from '../../../assets/img/PressCenter/index';
+import "./LastNews.scss";
+import { bigImg, eye, calendar } from "../../../assets/img/PressCenter/index";
 
 const LastNews = () => {
   const data = [
     {
+      id: 1,
       title:
-        'Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19',
-      date: '01.11.2021',
+        "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
+      date: "01.11.2021",
       view: 252,
     },
     {
+      id: 2,
       title:
-        'Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19',
-      date: '01.11.2021',
+        "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
+      date: "01.11.2021",
       view: 252,
     },
     {
+      id: 3,
       title:
-        'Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19',
-      date: '01.11.2021',
+        "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
+      date: "01.11.2021",
       view: 252,
     },
     {
+      id: 4,
       title:
-        'Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19',
-      date: '01.11.2021',
+        "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
+      date: "01.11.2021",
       view: 252,
     },
     {
+      id: 5,
       title:
-        'Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19',
-      date: '01.11.2021',
+        "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
+      date: "01.11.2021",
       view: 252,
     },
     {
+      id: 6,
       title:
-        'Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19',
-      date: '01.11.2021',
+        "Узбекистан приостанавливает авиасообщение с несколькими странами из-за нового штамма COVID–19",
+      date: "01.11.2021",
       view: 252,
     },
   ];
 
   const words = [
-    { title: '#Зима' },
-    { title: '#Минэнерго' },
-    { title: '#Население' },
-    { title: '#Министр энергетики' },
-    { title: '#Зима' },
-    { title: '#Зима' },
-    { title: '#Зима' },
+    { id: 1, title: "#Зима" },
+    { id: 2, title: "#Минэнерго" },
+    { id: 3, title: "#Население" },
+    { id: 4, title: "#Министр энергетики" },
+    { id: 5, title: "#Зима" },
+    { id: 6, title: "#Зима" },
+    { id: 7, title: "#Зима" },
   ];
 
   return (
-    <section className='container'>
-      <div className='lastNews'>
-        <div className='lastNews__left'>
-          <h2 className='lastNews__left__title'>
+    <section className="container">
+      <div className="lastNews">
+        <div className="lastNews__left">
+          <h2 className="lastNews__left__title">
             Зима близко. Население в предчувствии холодов, а Минэнерго подаёт
             тревожные сигналы
           </h2>
 
-          <div className='lastNews__img'>
-            <div className='lastNews__img__about'>
-              <div className='lastNews__img__about__inside'>
-                <img src={calendar} alt='' />
+          <div className="lastNews__img">
+            <div className="lastNews__img__about">
+              <div className="lastNews__img__about__inside">
+                <img src={calendar} alt="" />
                 <p>01.11.2021</p>
               </div>
-              <div className='lastNews__img__about__inside'>
-                <img src={eye} alt='' />
+              <div className="lastNews__img__about__inside">
+                <img src={eye} alt="" />
                 <p>2160</p>
               </div>
             </div>
 
-            <div className='lastName__img-img'>
-              <img src={bigImg} alt='' />
+            <div className="lastName__img-img">
+              <img src={bigImg} alt="" />
             </div>
           </div>
-          <div className='lastNews__text'>
+          <div className="lastNews__text">
             <p>
               Официальная информация Министерства энергетики в начале
               осенне-зимнего сезона этого года, против обыкновения, не была
@@ -132,26 +138,26 @@ const LastNews = () => {
               продолжает гаснуть…
             </p>
 
-            <div className='lastNews__text__author'>
+            <div className="lastNews__text__author">
               <h4>Аброр Зохидов,</h4>
               <span>еревод: Вадим Султанов</span>
             </div>
           </div>
         </div>
-        <div className='news_r'>
-          <div className='lastNews__right'>
-            <h3 className='lastNews__right__title'>Последные новости</h3>
+        <div className="news_r">
+          <div className="lastNews__right">
+            <h3 className="lastNews__right__title">Последные новости</h3>
 
-            {data.map(item => (
-              <div className='lastNews__right__card'>
-                <p className='lastNews__right__card__desc'>{item.title}</p>
-                <div className='lastNews__right__card__about'>
-                  <div className='lastNews__right__card__about__inside'>
-                    <img src={calendar} alt='' />
+            {data.map((item) => (
+              <div className="lastNews__right__card" key={item.id}>
+                <p className="lastNews__right__card__desc">{item.title}</p>
+                <div className="lastNews__right__card__about">
+                  <div className="lastNews__right__card__about__inside">
+                    <img src={calendar} alt="" />
                     <p>{item.date}</p>
                   </div>
-                  <div className='lastNews__right__card__about__inside'>
-                    <img src={eye} alt='' />
+                  <div className="lastNews__right__card__about__inside">
+                    <img src={eye} alt="" />
                     <p>{item.view}</p>
                   </div>
                 </div>
@@ -159,11 +165,11 @@ const LastNews = () => {
             ))}
           </div>
 
-          <div className='lastNews__right__keyWords'>
-            <h3 className='lastNews__right__keyWords__title'>Ключевые слова</h3>
-            <div className='lastNews__right__keyWords__text'>
-              {words.map(item => (
-                <p>{item.title}</p>
+          <div className="lastNews__right__keyWords">
+            <h3 className="lastNews__right__keyWords__title">Ключевые слова</h3>
+            <div className="lastNews__right__keyWords__text">
+              {words.map((item) => (
+                <p key={item.id}>{item.title}</p>
               ))}
             </div>
           </div>
