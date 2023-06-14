@@ -172,9 +172,15 @@ const Navbar = ({ setVoiceTurn, voiceTurn }) => {
                   transition
                 >
                   {PressCenterSection.map((item) => (
-                    <MenuItem key={item.id}>
-                      <NavLink to={item.path}>{t(item.name)}</NavLink>
-                    </MenuItem>
+                    <div key={item.id}>
+                      {item.name ? (
+                        <MenuItem>
+                          <NavLink to={item.path}>{t(item.name)}</NavLink>
+                        </MenuItem>
+                      ) : (
+                        ""
+                      )}
+                    </div>
                   ))}
                 </Menu>
                 <div className="h-line"></div>

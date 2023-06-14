@@ -1,55 +1,65 @@
-import { lazy } from "react";
-const Statistics = lazy(() =>
+import React from "react";
+import DeputySPA from "../../pages/AdviceSection/DeputySPA/DeputySPA";
+import LastNews from "../../pages/PressCenter/LastNews/LastNews";
+const Statistics = React.lazy(() =>
   import("../../pages/PressCenter/Statistics/Statistics")
 );
-const VideoGallery = lazy(() =>
+const VideoGallery = React.lazy(() =>
   import("../../pages/PressCenter/VideoGallery/VideoGallery")
 );
-const Infographics = lazy(() =>
+const Infographics = React.lazy(() =>
   import("../../pages/PressCenter/Infographics/Infographics")
 );
-const Division = lazy(() =>
+const Division = React.lazy(() =>
   import("../../pages/AboutSection/Division/Division")
 );
-const Management = lazy(() =>
+const Management = React.lazy(() =>
   import("../../pages/AboutSection/Management/Management")
 );
-const Order = lazy(() => import("../../pages/AboutSection/Order/Order"));
-const Structure = lazy(() =>
+const Order = React.lazy(() => import("../../pages/AboutSection/Order/Order"));
+const Structure = React.lazy(() =>
   import("../../pages/AboutSection/Structure/Structure")
 );
-const TargetTaskFunction = lazy(() =>
+const TargetTaskFunction = React.lazy(() =>
   import("../../pages/AboutSection/TargetTaskFunction/TargetTaskFunction")
 );
-const Vacancy = lazy(() => import("../../pages/AboutSection/Vacancy/Vacancy"));
-const Deputy = lazy(() => import("../../pages/AdviceSection/Deputy/Deputy"));
-const Documents = lazy(() =>
+const Vacancy = React.lazy(() =>
+  import("../../pages/AboutSection/Vacancy/Vacancy")
+);
+const Deputy = React.lazy(() =>
+  import("../../pages/AdviceSection/Deputy/Deputy")
+);
+const Documents = React.lazy(() =>
   import("../../pages/AdviceSection/Documents/Documents")
 );
-const Hakim = lazy(() => import("../../pages/AdviceSection/Hakim/Hakim"));
-const GeneralInfo = lazy(() => import("../../pages/AreaSection"));
-const AllPlaces = lazy(() =>
+const Hakim = React.lazy(() => import("../../pages/AdviceSection/Hakim/Hakim"));
+const GeneralInfo = React.lazy(() => import("../../pages/AreaSection"));
+const AllPlaces = React.lazy(() =>
   import("../../pages/AreaSection/Interesting/AllPlaces/AllPlaces")
 );
-const PlacesItem = lazy(() =>
+const PlacesItem = React.lazy(() =>
   import("../../pages/AreaSection/Interesting/AllPlaces/Components/PlacesItem")
 );
-const MapMirobot = lazy(() =>
+const MapMirobot = React.lazy(() =>
   import("../../pages/AreaSection/MapMirobot/MapMirobot")
 );
-const MassMedia = lazy(() =>
+const MassMedia = React.lazy(() =>
   import("../../pages/PressCenter/MassMedia/MassMedia")
 );
-const News = lazy(() => import("../../pages/PressCenter/News/News"));
-const FaqOne = lazy(() => import("../../pages/ServiceSection/FaqOne/FaqOne"));
-const FaqTwo = lazy(() => import("../../pages/ServiceSection/FaqTwo/FaqTwo"));
-const OpenSource = lazy(() =>
+const News = React.lazy(() => import("../../pages/PressCenter/News/News"));
+const FaqOne = React.lazy(() =>
+  import("../../pages/ServiceSection/FaqOne/FaqOne")
+);
+const FaqTwo = React.lazy(() =>
+  import("../../pages/ServiceSection/FaqTwo/FaqTwo")
+);
+const OpenSource = React.lazy(() =>
   import("../../pages/ServiceSection/OpenSourceOne/OpenSource")
 );
-const About = lazy(() =>
+const About = React.lazy(() =>
   import("../../pages/AboutSection/AboutHokimyat/AboutHokimyat")
 );
-const Photogallery = lazy(() =>
+const Photogallery = React.lazy(() =>
   import("../../pages/PressCenter/Photogallery/Photogallery")
 );
 
@@ -115,6 +125,7 @@ export const AdviceSection = [
     name: "navbar.council.documents",
   },
   { id: 4, path: "/council/assistants", element: <Hakim />, name: "" },
+  { id: 5, path: "/council/deputy/:id", element: <DeputySPA /> },
 ];
 
 export const ServiceSection = [
@@ -202,6 +213,11 @@ export const PressCenterSection = [
     path: "/press_center/photogallery",
     element: <Photogallery />,
     name: "Фотогалерея",
+  },
+  {
+    id: 6,
+    path: "/press_center/news/:id",
+    element: <LastNews />,
   },
   // {id: , path: "/area/" ,element :  , name: ""},
 ];
